@@ -137,3 +137,17 @@
   position: relative;
   z-index: 3;
 }
+
+.newsize {
+  width: 120px;
+  height: 120px;
+}
+.more_stories {
+  font-size: 14px !important;
+  line-height: 15px !important;
+}
+
+.inside_info {
+  font-size: 13px !important;
+  line-height: 14px !important;
+}
