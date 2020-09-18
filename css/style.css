@@ -1,7 +1,7 @@
 /*start navbar*/
 .navbar {
   height: 50px;
-  background-color: rgb(247,34,16);
+  background-color: rgb(247, 34, 16);
   padding: 0 1rem;
   align-items: unset;
 }
@@ -85,19 +85,32 @@
   line-height: 21px;
 }
 
-.media_by::after {
+.bigline::before {
   content: "";
   display: block;
   background-color: #d9d9d9;
-  height: 1px;
+  height: 2px;
   position: absolute;
   left: 0;
   right: 0;
+  top: 15px;
 }
 
+.bigline::after {
+  content: "";
+  display: block;
+  background-color: #d9d9d9;
+  height: 2px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 18px;
+}
 .vs {
   background-color: black;
   border-radius: 50%;
   width: 30px;
   font: bold 14px/32px "Roboto Condensed", sans-serif;
+  position: relative;
+  z-index: 3;
 }
