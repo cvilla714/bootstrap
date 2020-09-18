@@ -9,6 +9,10 @@
 .nw-logo {
   height: 22px;
 }
+
+.navbar-nav {
+  margin-top: 5px;
+}
 /*end navbar*/
 
 .container-fluid {
