@@ -10,11 +10,13 @@
     <link rel="stylesheet" href="/css/style.css" />
     <title>Using Bootstrap</title>
 
+    <!-- link for fontawesome -->
+    <script src="https://kit.fontawesome.com/e252d07dd4.js" crossorigin="anonymous"></script>
     <!-- <link rel="stylesheet" href="./css/reset.css" type="text/css" /> -->
   </head>
   <body>
     <nav class="navbar">
-      <a href="#" class="navbar-brand"><img class="nw-logo" src="./images/Newsweek_Logo.png"></a>
+      <a href="#" class="navbar-brand"><img class="nw-logo" src="./images/Newsweek_Logo.png" /></a>
     </nav>
     <div class="main container-fluid">
       <div class="row px-3 mt-3">
@@ -104,7 +106,14 @@
           </div>
           <div class="card-body px-0 py-0">
             <a href="#!" class="card-link text-dark font-weight-bolder normal-link"> Trump Admin Wanted to Use 'Heat Ray' on Protesters </a>
-            <p class="card-text inside mt-2">"A military whistleblower said federal officials asked about crowd control technology hours before protesters were forcibly cleared from Lafayette Square in Washington, D.C."</p>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item px-0 py-0">
+                <p class="card-text inside mt-2">A military whistleblower said federal officials asked about crowd control technology hours before protesters were forcibly cleared from Lafayette Square in Washington, D.C.</p>
+              </li>
+              <li class="list-group-item px-0 py-1">
+                <a href="#!" class="card-link text-dark font-weight-bolder normal-link"> 'Like Opening Up An Oven Door'—Watch 'Heat Ray' Feds Wanted to Use on Protesters in Action </a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -119,7 +128,86 @@
           <div class="author"><span class="media_by fs-12"> BY </span><span class="text-uppercase span_media fs-12">jamin n.jaffer</span></div>
         </div>
       </div>
-      <div class="vs my-2 mx-auto text-center text-white fs-12">VS</div>
+      <div class="bigline position-relative">
+        <div class="vs my-2 mx-auto text-center text-white fs-12">VS</div>
+      </div>
+
+      <div class="media pt-2 pb-1 mt-2 debate_border">
+        <div class="media-body font-weight-bolder">
+          <h5 class="mt-0 mb-1">
+            <a href="#" class="stretched-link text-dark"> The U.S. Needs a Cyber Strategy Designed for Defense </a>
+          </h5>
+          <div class="author"><span class="media_by fs-12"> BY </span><span class="text-uppercase span_media fs-12">bonnie kristian</span></div>
+        </div>
+        <img class="d-flex ml-3 media_img" src="/images/bonnie-kristian.png" alt="Generic placeholder image" />
+      </div>
+
+      <div class="w-100 text-muted text-uppercase mt-3 pb-3 font-weight-bolder">opinion</div>
+      <ul class="list-unstyled">
+        <li class="media border-bottom pb-3">
+          <img src="/images/jenna-ellis.png" class="mr-3" alt="..." />
+          <div class="media-body">
+            <h5 class="mt-0 mb-1">
+              <a href="#" class="stretched-link text-dark"> Save Our American System </a>
+            </h5>
+            <div class="author"><span class="media_by fs-12"> BY </span><span class="text-uppercase span_media fs-12">jenna-ellis</span></div>
+          </div>
+        </li>
+        <li class="media border-bottom py-3">
+          <img src="/images/arthur-lieber.png" class="mr-3" alt="..." />
+          <div class="media-body">
+            <h5 class="mt-0 mb-1">
+              <a href="#" class="stretched-link text-dark"> How the Democratic Party Can Win Back the Trump Base </a>
+            </h5>
+            <div class="author"><span class="media_by fs-12"> BY </span><span class="text-uppercase span_media fs-12">arthur-lieber</span></div>
+          </div>
+        </li>
+        <li class="media border-bottom py-3">
+          <img src="/images/jason-d-greenblatt.png" class="mr-3" alt="..." />
+          <div class="media-body">
+            <h5 class="mt-0 mb-1">
+              <a href="#" class="stretched-link text-dark"> The Abraham Accords Are a Sanctification of God's Name </a>
+            </h5>
+            <div class="author"><span class="media_by fs-12"> BY </span><span class="text-uppercase span_media fs-12">jason-d-greenblatt</span></div>
+          </div>
+        </li>
+        <li class="media border-bottom py-3">
+          <img src="/images/ilya-shapiro.png" class="mr-3" alt="..." />
+          <div class="media-body">
+            <h5 class="mt-0 mb-1">
+              <a href="#" class="stretched-link text-dark"> Trump's New Supreme Court List Serves a Different Purpose Than the Old One </a>
+            </h5>
+            <div class="author"><span class="media_by fs-12"> BY </span><span class="text-uppercase span_media fs-12">iliya ilya-shapiro</span></div>
+          </div>
+        </li>
+        <li class="media border-bottom py-3">
+          <img src="/images/hans-von-spakovsky-courtney-baer.png" class="mr-3" alt="..." />
+          <div class="media-body">
+            <h5 class="mt-0 mb-1">
+              <a href="#" class="stretched-link text-dark"> A Common-Sense Decision on Felon Voting in Florida </a>
+            </h5>
+            <div class="author"><span class="media_by fs-12"> BY </span><span class="text-uppercase span_media fs-12">hans-von-spakovsky-courtney-baer</span></div>
+          </div>
+        </li>
+        <li class="media border-bottom py-3">
+          <img src="/images/jonathan-tobin.png" class="mr-3" alt="..." />
+          <div class="media-body">
+            <h5 class="mt-0 mb-1">
+              <a href="#" class="stretched-link text-dark"> Kushner And The Amateurs Better at Diplomacy Than The 'Experts' </a>
+            </h5>
+            <div class="author"><span class="media_by fs-12"> BY </span><span class="text-uppercase span_media fs-12">jonathan-tobin</span></div>
+          </div>
+        </li>
+        <li class="media py-3">
+          <img src="/images/john-dale-grover.png" class="mr-3" alt="..." />
+          <div class="media-body">
+            <h5 class="mt-0 mb-1">
+              <a href="#" class="stretched-link text-dark"> The Wildfires Show How the Forever Wars Harm Americans at Home </a>
+            </h5>
+            <div class="author"><span class="media_by fs-12"> BY </span><span class="text-uppercase span_media fs-12">john-dale-grover</span></div>
+          </div>
+        </li>
+      </ul>
     </div>
 
     <!-- Optional JavaScript -->
