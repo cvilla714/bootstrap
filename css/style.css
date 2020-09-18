@@ -10,9 +10,32 @@
   height: 22px;
 }
 
-.navbar-nav {
-  margin-top: 5px;
+.navbar-nav .nav-link {
+  padding-right: 11.5px;
+  padding-left: 11.5px;
 }
+
+.fa-user {
+  font-size: 17px;
+  color: rgba(255, 255, 255, 0.836);
+}
+
+.subs-bttn {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 12px;
+  color: rgb(0, 0, 0);
+  font-weight: bolder;
+  padding: 4px 0 3px;
+  margin-left: 10px;
+  background-color: rgb(255,228,0);
+  border-radius: 11.5px;
+}
+
+.subs-arrow {
+  width: 6px;
+  margin-bottom: 3px;
+}
+
 /*end navbar*/
 
 .container-fluid {
