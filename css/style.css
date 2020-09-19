@@ -81,6 +81,17 @@
   bottom: 0;
 }
 
+.category_culture {
+  font: bold 13px/17px "Roboto Condensed", sans-serif;
+  text-transform: uppercase;
+  padding: 0 6px 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 1;
+  display: block;
+  position: absolute;
+  bottom: 0;
+}
+
 .media_img {
   width: 63px;
   height: 63px;
@@ -98,6 +109,10 @@
 
 .fs-12 {
   font-size: 12px;
+}
+
+.fs-14 {
+  font-size: 14px;
 }
 .media_by {
   font-weight: normal;
@@ -139,8 +154,8 @@
 }
 
 .newsize {
-  width: 120px;
-  height: 120px;
+  width: 115px;
+  height: 115px;
 }
 .more_stories {
   font-size: 14px !important;
