@@ -166,3 +166,13 @@
   font-size: 13px !important;
   line-height: 14px !important;
 }
+
+.form-group label {
+  background: url(/images/favicon-32x32.png) no-repeat;
+  background-position-y: center;
+}
+
+.fs-19 {
+  font-size: 17px;
+  line-height: 19px;
+}
