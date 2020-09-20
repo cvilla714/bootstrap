@@ -158,13 +158,13 @@
   height: 115px;
 }
 .more_stories {
-  font-size: 14px !important;
-  line-height: 15px !important;
+  font-size: 15px !important;
+  line-height: 17px !important;
 }
 
 .inside_info {
-  font-size: 13px !important;
-  line-height: 14px !important;
+  font-size: 14px !important;
+  line-height: 16px !important;
 }
 
 .form-group label {
@@ -174,5 +174,25 @@
 
 .fs-19 {
   font-size: 17px;
+  line-height: 19px;
+}
+
+.group_img {
+  width: 290px;
+  height: 194px;
+}
+
+h4 {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.inside_media_img {
+  width: 95px;
+  height: 95px;
+}
+
+.fs-15 {
+  font-size: 15px;
   line-height: 19px;
 }
