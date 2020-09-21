@@ -16,8 +16,8 @@
 }
 
 .fa-user {
-  font-size: 17px;
-  color: rgba(255, 255, 255, 0.836);
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.745);
 }
 
 .subs-bttn {
@@ -34,6 +34,12 @@
 .subs-arrow {
   width: 6px;
   margin-bottom: 3px;
+}
+
+.fa-bars {
+  font-size: 17px;
+  color: rgb(255, 255, 255, 0.55);
+  margin-left: 10px;
 }
 
 /*end navbar*/
