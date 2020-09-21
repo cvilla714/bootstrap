@@ -173,10 +173,15 @@
   line-height: 16px !important;
 }
 
-.form-group label {
+.label_img {
   background: url(/images/favicon-32x32.png) no-repeat;
   background-position-y: center;
 }
+
+/* .form-group label { */
+/* background: url(/images/favicon-32x32.png) no-repeat; */
+/* background-position-y: center; */
+/* } */
 
 .fs-19 {
   font-size: 17px;
@@ -201,4 +206,37 @@ h4 {
 .fs-15 {
   font-size: 15px;
   line-height: 19px;
+}
+
+.two_images {
+  width: 170px;
+  height: 227px;
+}
+
+.niddle {
+  top: 37px;
+  left: 100px;
+}
+
+.subpad {
+  padding: 24px 20px 20px;
+}
+
+.subline {
+  font-size: 18px;
+  line-height: 25px;
+  bottom: -10px;
+}
+
+.fs-subs {
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.subbtn {
+  bottom: 0;
+}
+
+.subcolor {
+  background-color: #f4f5f6;
 }
