@@ -76,6 +76,23 @@
   position: absolute;
 }
 
+.categori span {
+  padding: 3px 10px;
+  background-color: #f72210;
+  color: white;
+  margin-right: 7px;
+}
+
+.category_last {
+  padding: 0 5px;
+  background-color: #f72210;
+  margin-right: 7px;
+  z-index: 1;
+  display: block;
+  position: absolute;
+  bottom: 0;
+}
+
 .category {
   font: bold 17px/16px "Roboto Condensed", sans-serif;
   text-transform: uppercase;
@@ -119,6 +136,12 @@
 
 .fs-14 {
   font-size: 14px;
+  line-height: 16px;
+}
+
+.fs-16 {
+  font-size: 15px;
+  line-height: 17px;
 }
 .media_by {
   font-weight: normal;
@@ -173,9 +196,10 @@
   line-height: 16px !important;
 }
 
-.label_img {
+.edit_label_img {
   background: url(/images/favicon-32x32.png) no-repeat;
   background-position-y: center;
+  background-position-x: 40px;
 }
 
 /* .form-group label { */
@@ -186,6 +210,11 @@
 .fs-19 {
   font-size: 17px;
   line-height: 19px;
+}
+
+.fs-20 {
+  font-size: 20px;
+  line-height: 35px;
 }
 
 .group_img {
@@ -245,7 +274,7 @@ h4 {
 
 .newsweek-cont {
   padding: 27px 0 10px;
-  border-bottom: 1px solid rgb(217,217,217);
+  border-bottom: 1px solid rgb(217, 217, 217);
 }
 
 .brand svg {
@@ -262,15 +291,16 @@ h4 {
   color: rgb(102, 102, 102);
   font-weight: 400;
 }
-.socialmedia i{
-  color: rgb(102,102,102);
+.socialmedia i {
+  color: rgb(102, 102, 102);
 }
 
 .fa-facebook-square {
   font-size: 26px;
 }
 
-.fa-twitter, .fa-instagram {
+.fa-twitter,
+.fa-instagram {
   margin-top: 3px;
   font-size: 23px;
 }
@@ -280,7 +310,7 @@ h4 {
   font-size: 20px;
 }
 
-.fa-linkedin-in  {
+.fa-linkedin-in {
   font-size: 25px;
 }
 
@@ -313,19 +343,8 @@ h4 {
   color: rgb(0, 0, 0);
 }
 
-
 .editions {
   margin-top: 6px;
   margin-right: 15px;
 }
 /* Footer ends here */
-
-.editor_icon {
-  -webkit-flex: none;
-  flex: none;
-  display: block;
-  width: 29px;
-  height: 28px;
-  background: url(https://g.newsweek.com/www/images/logo-n1.svg) no-repeat #f72210;
-  margin-right: 10px;
-}
