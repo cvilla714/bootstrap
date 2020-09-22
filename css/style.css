@@ -1,4 +1,12 @@
-/*start navbar*/
+/* start navbar */
+  .nvb-top {
+    height: 95px;
+    background-color: rgb(247,34,16);
+    padding: 20px 10px 15px;
+  }
+/* end navbar */
+
+/*start sticky navbar*/
 .navbar {
   height: 50px;
   background-color: rgb(247, 34, 16);
@@ -42,7 +50,7 @@
   margin-left: 10px;
 }
 
-/*end navbar*/
+/*end sticky navbar*/
 
 .container-fluid {
   max-width: 1310px;
