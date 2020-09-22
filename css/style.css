@@ -68,14 +68,6 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.each_category {
-  position: relative;
-}
-
-.position {
-  position: absolute;
-}
-
 .categori span {
   padding: 3px 10px;
   background-color: #f72210;
@@ -202,10 +194,10 @@
   background-position-x: 40px;
 }
 
-/* .form-group label { */
-/* background: url(/images/favicon-32x32.png) no-repeat; */
-/* background-position-y: center; */
-/* } */
+.form-group label {
+  background: url(/images/favicon-32x32.png) no-repeat;
+  background-position-y: center;
+}
 
 .fs-19 {
   font-size: 17px;
@@ -348,3 +340,9 @@ h4 {
   margin-right: 15px;
 }
 /* Footer ends here */
+
+@media screen and (max-width: 991px) {
+  .navbar {
+    display: flex !important;
+  }
+}
