@@ -340,3 +340,27 @@ h4 {
     display: flex !important;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .travel {
+    bottom: 90rem;
+  }
+
+  .free {
+    bottom: 136.9375rem;
+  }
+
+  .survey {
+    left: 20.3125rem;
+    bottom: 101.25rem;
+  }
+
+  .more {
+    left: 20.25rem;
+    bottom: 139.125rem;
+  }
+
+  .adjust {
+    /* height: 3687px; */
+  }
+}
