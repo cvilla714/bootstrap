@@ -188,12 +188,6 @@
   line-height: 16px !important;
 }
 
-.edit_label_img {
-  background: url(/images/favicon-32x32.png) no-repeat;
-  background-position-y: center;
-  background-position-x: 40px;
-}
-
 .form-group label {
   background: url(/images/favicon-32x32.png) no-repeat;
   background-position-y: center;
