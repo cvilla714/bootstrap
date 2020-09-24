@@ -379,7 +379,7 @@
 }
 
 .form-group label {
-  background: url(/images/favicon-32x32.png) no-repeat;
+  background: url(../images/favicon-32x32.png) no-repeat;
   background-position-y: center;
 }
 
