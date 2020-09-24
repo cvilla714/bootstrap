@@ -14,8 +14,11 @@
     <script src="https://kit.fontawesome.com/e252d07dd4.js" crossorigin="anonymous"></script>
     <!-- <link rel="stylesheet" href="./css/reset.css" type="text/css" /> -->
   </head>
+
   <body>
-    <header class="container-fluid">
+
+    <!-- Main navbar starts here-->
+    <header class="d-none d-lg-block container-fluid" id="nvb-container">
         <div class="nvb-top d-flex flex-column w-100 position-relative">
           <div class="d-flex">
             <a class="wthr-city">
@@ -34,23 +37,42 @@
             </div>
           </div>
         </div>
-        <nav class="nvb-middle w-100 d-flex align-items-center">
-          <ul class="list-inline">
-            <li class="list-inline-item"><a>U.S.</a></li>
-            <li class="list-inline-item"><a>World</a></li>
-            <li class="list-inline-item"><a>Business</a></li>
-            <li class="list-inline-item"><a>Tech & Science</a></li>
-            <li class="list-inline-item"><a>Culture</a></li>
-            <li class="list-inline-item"><a>Newsgeek</a></li>
-            <li class="list-inline-item"><a>Sports</a></li>
-            <li class="list-inline-item"><a>Health</a></li>
-            <li class="list-inline-item"><a>The Debate</a></li>
-            <li class="list-inline-item"><a>Vantage</a></li>
-            <li class="list-inline-item"><a>Weather</a></li>
+        <nav class="nvb-middle w-100 d-flex align-items-center nvb-border-bttm">
+            <ul class="mb-0 list-inline d-flex">
+              <li class="px-3 d-inline-block"><a class="hvr-red">U.S.</a></li>
+              <li class="px-3 d-inline-block mid-link-border"><a class="hvr-red">World</a></li>
+              <li class="px-3 d-inline-block mid-link-border"><a class="hvr-red">Business</a></li>
+              <li class="px-3 d-inline-block mid-link-border"><a class="hvr-red">Tech & Science</a></li>
+              <li class="px-3 d-inline-block mid-link-border"><a class="hvr-red">Culture</a></li>
+              <li class="px-3 d-inline-block mid-link-border"><a class="hvr-red">Newsgeek</a></li>
+              <li class="px-3 d-inline-block mid-link-border"><a class="hvr-red">Sports</a></li>
+              <li class="px-3 d-inline-block mid-link-border"><a class="hvr-red">Health</a></li>
+              <li class="px-3 d-inline-block mid-link-border"><a class="hvr-red">The Debate</a></li>
+              <li class="px-3 d-inline-block mid-link-border"><a class="hvr-red">Vantage</a></li>
+              <li class="px-3 d-inline-block mid-link-border"><a class="hvr-red">Weather</a></li>
+            </ul>
+          <div class="d-flex align-items-center">
+            <span class="search-bx">Search</span>
+            <img class="search-icon" src="./images/icon-search-glass.svg" alt="Search">
+          </div>
+        </nav>
+        <nav class="nvb-bottom w-100 d-flex align-items-center nvb-border-bttm">
+          <ul class="mb-0 list-inline d-flex">
+            <li class="pl-4 d-inline-block"><a id="first-link">TRENDING</a></li>
+            <li class="pl-4 d-inline-block"><a class="hvr-red">DONALD TRUMP
+            </a></li>
+            <li class="pl-4 d-inline-block"><a class="hvr-red">JOE BIDEN
+            </a></li>
+            <li class="pl-4 d-inline-block"><a class="hvr-red">CHINA
+            </a></li>
+            <li class="pl-4 d-inline-block"><a class="hvr-red">CORONAVIRUS</a></li>
+            <li class="pl-4 d-inline-block"><a class="hvr-red">2020 ELECTION</a></li>
           </ul>
-          <div></div>
         </nav>
     </header>
+    <!-- main navbar ends here -->
+
+    <!-- The sticky navbar starts here -->
     <nav class="navbar navbar-expand d-none sticky-top">
       <a href="#" class="navbar-brand"><img class="nw-logo" src="./images/Newsweek_Logo.png" /></a>
       <div class="collapse navbar-collapse">
@@ -70,22 +92,6 @@
     <!-- </nav>   -->
     <!-- The sticky navbar ends here -->
 
-<<<<<<< HEAD
-    <!-- main navbar starts here -->
-    <!-- main navbar ends here -->
-
-    <div class="container-fluid">
-      <!-- section for the main container -->
-      <div class="row">
-        <div class="row col-lg-6 h-25 order-lg-1">
-          <div class="card border-0 ml-3 pl-lg-0 mt-3">
-            <h6 class="card-title text-uppercase text-muted">Top Story</h6>
-            <div class="position-relative">
-              <img class="card-img-top" src="/images/pelosi.jpg" alt="Card image cap" />
-              <div class="category">
-                <a href="" class="text-danger">politics</a>
-              </div>
-=======
     <!-- section for the main container -->
     <div class="main container-fluid">
       <div class="row px-3 mt-3">
@@ -95,7 +101,6 @@
             <img class="card-img-top" src="/images/pelosi.jpg" alt="Card image cap" />
             <div class="category">
               <a href="" class="text-danger">politics</a>
->>>>>>> 8bc5c16258f1d4ea93a7e18281e6cc41d256da78
             </div>
             <div class="card-body px-0 py-0">
               <h3 class="normal-link mt-2">
@@ -1375,8 +1380,8 @@
       <!-- Footer starts here -->
       <footer>
         <div class="px-3">
-          <div class="newsweek-cont">
-            <div class="copyright">
+          <div class=" d-block d-lg-flex justify-content-between newsweek-cont w-100">
+            <div class="copyright d-block d-lg-flex">
               <a class="brand" href="https://www.newsweek.com" title="Newsweek Homepage">
                 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 395.6 60" style="enable-background: new 0 0 395.6 60" xml:space="preserve">
                   <g>
@@ -1387,7 +1392,7 @@
                   </g>
                 </svg>
               </a>
-              <span class="w-25">© 2020 NEWSWEEK</span>
+              <span class="w-50 mt-4">© 2020 NEWSWEEK</span>
             </div>
             <div class="socialmedia mt-2 d-flex">
               <i class="fab fa-facebook-square mr-3"></i>
