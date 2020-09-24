@@ -149,6 +149,11 @@
   line-height: 24px;
 }
 
+.sub_title {
+  font-size: 26px;
+  font-family: "Roboto Condensed", sans-serif;
+  line-height: 28px;
+}
 .normal-link {
   font-size: 18px;
   line-height: 21px;
@@ -437,6 +442,26 @@ h4 {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .sub_dark {
+    display: flex;
+  }
+  .sub_subscripe,
+  .sub_dark_no {
+    display: none;
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar {
+    display: flex !important;
+  }
+
+  header {
+    display: none;
+  }
+}
+
 @media (min-width: 768px) and (max-width: 991px) {
   .free {
     bottom: 1955px !important;
@@ -448,13 +473,13 @@ h4 {
   }
 
   .travel {
-    bottom: 2575px;
+    bottom: 2555px;
     left: 352px;
   }
 
   .more {
-    bottom: 2015px;
-    right: 18px;
+    bottom: 1990px;
+    right: 16px;
   }
 
   .debating {
@@ -474,45 +499,27 @@ h4 {
   .n-height {
     height: 12760px;
   }
-}
-
-@media screen and (max-width: 991px) {
-  .navbar {
-    display: flex !important;
-  }
-
-  header {
+  .sub_text,
+  .sub_dark {
     display: none;
   }
 }
 
-/* @media screen and (min-width: 992px) { */
-/* .travel { */
-/* bottom: 90rem; */
-/* } */
-/*  */
-/* .free { */
-/* bottom: 136.9375rem; */
-/* } */
-/*  */
-/* .survey { */
-/* left: 19.3125rem; */
-/* bottom: 101.25rem; */
-/* } */
-/*  */
-/* .more { */
-/* left: 20.25rem; */
-/* bottom: 139.125rem; */
-/* } */
-/*  */
-/* .another { */
-/* bottom: 1610px; */
-/* } */
-/*  */
-/* .n-height { */
-/* height: 8800px; */
-/* } */
-/* } */
+@media screen and (min-width: 910px) and (max-width: 991px) {
+  .travel {
+    bottom: 2615px;
+    left: 445px;
+  }
+
+  .more {
+    bottom: 2000px;
+    right: 35px;
+  }
+
+  .debating {
+    top: 1190px;
+  }
+}
 
 @media screen and (min-width: 992px) and (max-width: 1300px) {
   .travel {
