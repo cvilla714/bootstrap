@@ -403,8 +403,6 @@ h4 {
 @media screen and (max-width: 475px) {
   .another {
     bottom: 0;
-
-    /* inside_info; */
   }
 
   .free {
@@ -419,7 +417,8 @@ h4 {
   }
 
   .sub_subscripe,
-  .sub_dark_no {
+  .sub_dark_no,
+  .show {
     display: none;
   }
 }
@@ -432,7 +431,8 @@ h4 {
   }
 
   .sub_text,
-  .sub_dark {
+  .sub_dark,
+  .fa_none {
     display: none;
   }
 }

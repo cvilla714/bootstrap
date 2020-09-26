@@ -2,14 +2,14 @@
 
 # Using Bootstrap
 
-Building a Clone of the Newsweek using Bootstrap
+Building a Clone of the Newsweek using Bootstrap Framework
 
 ![screenshot](./app_screenshot.png/)
 
 #HTML, CSS and Bootstrap
 
 We created this project using for the most part Bootstrap
-the objective was to clone the website Newsweek.
+framework the objective was to clone the website Newsweek.
 
 ## Built With
 
