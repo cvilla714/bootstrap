@@ -312,8 +312,8 @@ h4 {
 }
 
 .niddle {
-  top: 37px;
-  left: 100px;
+  top: 15px;
+  left: 85px;
 }
 
 .subpad {
@@ -411,6 +411,20 @@ h4 {
   }
 }
 
+@media screen and (min-width: 425px) {
+  .niddle {
+    top: 15px;
+    left: 168px;
+  }
+}
+
+@media screen and (min-width: 426px) and (max-width: 767px) {
+  .niddle {
+    top: 15px;
+    left: 350px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .sub_dark {
     display: flex;
@@ -435,6 +449,11 @@ h4 {
   .fa_none {
     display: none;
   }
+
+  .niddle_hide {
+    top: 15px;
+    left: 110px;
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -458,12 +477,12 @@ h4 {
   }
 
   .travel {
-    bottom: 2555px;
+    bottom: 2518px;
     left: 352px;
   }
 
   .more {
-    bottom: 1990px;
+    bottom: 1930px;
     right: 16px;
   }
 
@@ -488,7 +507,7 @@ h4 {
 
 @media screen and (min-width: 910px) and (max-width: 991px) {
   .travel {
-    bottom: 2615px;
+    bottom: 2585px;
     left: 445px;
   }
 
