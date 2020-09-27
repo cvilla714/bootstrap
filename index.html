@@ -1,0 +1,1504 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Using Bootstrap</title>
+
+    <!-- link for fontawesome -->
+    <script src="https://kit.fontawesome.com/e252d07dd4.js" crossorigin="anonymous"></script>
+
+    <!-- Font-family link -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- Main navbar starts here-->
+    <header class="d-none d-lg-block container-fluid px-0 py-0">
+      <div class="nvb-top main_red pt-4 pb-3 px-2 d-flex flex-column w-100 position-relative">
+        <div class="d-flex">
+          <a href="#" class="wthr-city ffam text-white font-weight-bold">
+            <img class="wthr ml-3" src="./images/wether.png" alt="weather" /> 25°
+            <span class="ml-2">Zozocolco de Hidalgo, MX </span>
+            <img class="w-arrow" src="./images/weather_arrow.png" alt="weather-arrow" />
+          </a>
+        </div>
+        <img class="nw-main-logo position-absolute" src="./images/Newsweek_main_logo.PNG" alt="main-logo" />
+        <div class="d-flex w-100 justify-content-between align-content-center">
+          <span class="date ffam ml-3 py-2 text-white">Tue, Sep 22, 2020</span>
+          <div class="d-flex align-content-center">
+            <p class="fs-robo ffam font-weight-bold d-inline-block my-1 pt-1 pb-0 px-3 login text-white">LOGIN</p>
+            <a href="#" class="fs-robo px-3 my-1 text-dark font-weight-bolder ml-2 mr-3 bg-warning d-flex align-items-center rounded-pill">SUBSCRIBE <i class="fas fa-chevron-right right ml-2"></i></a>
+          </div>
+        </div>
+      </div>
+      <nav class="nvb-middle position-relative d-flex align-items-center nvb-border-bttm">
+        <ul class="mb-0 list-inline d-flex">
+          <li class="px-xl-3 px-lg-1 d-inline-block"><a class="hvr-red login text-decoration-none ffam font-weight-bolder text-dark">U.S.</a></li>
+          <li class="px-xl-3 px-lg-1 d-inline-block mid-link-border"><a class="hvr-red text-decoration-none login ffam font-weight-bolder text-dark">World</a></li>
+          <li class="px-xl-3 px-lg-1 d-inline-block mid-link-border"><a class="hvr-red text-decoration-none login ffam font-weight-bolder text-dark">Business</a></li>
+          <li class="px-xl-3 px-lg-1 d-inline-block mid-link-border"><a class="hvr-red text-decoration-none login ffam font-weight-bolder text-dark">Tech & Science</a></li>
+          <li class="px-xl-3 px-lg-1 d-inline-block mid-link-border"><a class="hvr-red text-decoration-none login ffam font-weight-bolder text-dark">Culture</a></li>
+          <li class="px-xl-3 px-lg-1 d-inline-block mid-link-border"><a class="hvr-red text-decoration-none login ffam font-weight-bolder text-dark">Newsgeek</a></li>
+          <li class="px-xl-3 px-lg-1 d-inline-block mid-link-border"><a class="hvr-red text-decoration-none login ffam font-weight-bolder text-dark">Sports</a></li>
+          <li class="px-xl-3 px-lg-1 d-inline-block mid-link-border"><a class="hvr-red text-decoration-none login ffam font-weight-bolder text-dark">Health</a></li>
+          <li class="px-xl-3 px-lg-1 d-inline-block mid-link-border"><a class="hvr-red text-decoration-none login ffam font-weight-bolder text-dark">The Debate</a></li>
+          <li class="px-xl-3 px-lg-1 d-inline-block mid-link-border"><a class="hvr-red text-decoration-none login ffam font-weight-bolder text-dark">Vantage</a></li>
+          <li class="px-xl-3 px-lg-1 d-inline-block mid-link-border"><a class="hvr-red text-decoration-none login ffam font-weight-bolder text-dark">Weather</a></li>
+        </ul>
+        <div class="d-flex align-items-center">
+          <span class="search-bx text-dark date">Search</span>
+          <i class="fas fa-search search-icon ml-2"></i>
+        </div>
+      </nav>
+      <nav class="nvb-bottom w-100 d-flex align-items-center nvb-border-bttm">
+        <ul class="mb-0 list-inline d-flex">
+          <li class="pl-4 d-inline-block"><a class="text-dark font-weight-bolder text-decoration-none login">TRENDING</a></li>
+          <li class="pl-4 d-inline-block"><a class="hvr-red login">DONALD TRUMP </a></li>
+          <li class="pl-4 d-inline-block"><a class="hvr-red login">JOE BIDEN </a></li>
+          <li class="pl-4 d-inline-block"><a class="hvr-red login">CHINA </a></li>
+          <li class="pl-4 d-inline-block"><a class="hvr-red login">CORONAVIRUS</a></li>
+          <li class="pl-4 d-inline-block"><a class="hvr-red login">2020 ELECTION</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- main navbar ends here -->
+
+    <!-- The sticky navbar starts here -->
+    <nav class="navbar navbar-expand d-none sticky-top main_red">
+      <a href="#" class="navbar-brand"><img class="nw-logo" src="./images/Newsweek_Logo.png" alt="Main Logo" /></a>
+      <div class="collapse navbar-collapse d-flex justify-content-end">
+        <ul class="navbar-nav align-items-center">
+          <li class="nav-item show">
+            <p class="fs-robo ffam font-weight-bold d-inline-block my-1 pt-1 pb-0 px-3 login text-white">LOGIN</p>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="px-0 fa_none"><i class="fas fa-user text-white"></i></a>
+          </li>
+          <li class="navitem">
+            <a href="#" class="text-decoration-none subs-bttn ffam text-dark font-weight-bolder py-1 px-1 rounded-pill bg-warning ml-1">SUBSCRIBE </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="bars-icon px-0"><i class="fas fa-bars"></i></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- The sticky navbar ends here -->
+
+    <div class="container-fluid n-height">
+      <!-- section for the main container -->
+      <div class="row adjust">
+        <div class="ml-0 px-lg-0 mx-lg-2 col-lg-5 h-25 order-lg-1 row col-md-6 h-25 ml-md-3 order-md-2">
+          <!-- <div class="ml-0 px-lg-0 mx-lg-2 col-lg-5 h-25 order-lg-1 row col-md-6 h-25 ml-md-3 order-md-2"> -->
+
+          <div class="col-sm-12 card border-0 ml-lg-0 pl-lg-0 mt-3">
+            <h6 class="card-title text-uppercase text-muted">Top Story</h6>
+            <div class="position-relative">
+              <img class="card-img-top" src="./images/pelosi.jpg" alt="Card image cap" />
+              <div class="category py-2 px-2 d-block position-absolute py-2 px-2 d-block position-absolute main_white">
+                <a href="" class="text-danger text-uppercase ffam font-weight-bold">politics</a>
+              </div>
+            </div>
+            <div class="card-body px-0 py-0">
+              <h3 class="normal-link mt-2">
+                <a href="#!" class="card-link text-dark font-weight-bolder title-link ffam"> Pelosi Is Blocking Second Skinny Stimulus Plan, Now From Moderate Dems </a>
+              </h3>
+              <p class="card-text inside mt-2">"We did come down," the House Speaker said. "We can only go so far."</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 mr-lg-2 order-lg-0 col-md-5 ml-md-3 order-md-1">
+          <!-- section for the feature stories -->
+          <div class="row px-lg-0 px-3 mt-3">
+            <div class="col-sm-12 card border-0">
+              <h6 class="card-title text-uppercase text-muted">featured stories</h6>
+              <div class="position-relative">
+                <a href="#">
+                  <img class="card-img-top" src="./images/usa-binary-map-smaller-version.jpg" alt="Card image cap" />
+                </a>
+                <div class="category py-2 px-2 d-block position-absolute py-2 px-2 d-block position-absolute main_white">
+                  <a href="" class="text-danger text-uppercase">world</a>
+                </div>
+              </div>
+              <div class="card-body px-0 py-0">
+                <h3 class="normal-link mt-2">
+                  <a href="#!" class="card-link text-dark font-weight-bolder"> As U.S.-China Cyber Cold War Rages, Intellectual Property Is A Costly Front </a>
+                </h3>
+                <p class="card-text inside mt-2">"The theft of intellectual property by the People's Republic of China costs America as much as $500 billion a year," U.S. counterintelligence chief William Evanina told Newsweek."</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row px-3 mt-3">
+            <div class="col-sm-12 card border-0">
+              <div class="position-relative">
+                <img class="card-img-top" src="./images/apple-blm.jpg" alt="Card image cap" />
+                <div class="category py-2 px-2 d-block position-absolute py-2 px-2 d-block position-absolute main_white">
+                  <a href="" class="text-danger text-uppercase">news</a>
+                </div>
+              </div>
+              <div class="card-body px-0 py-0">
+                <h3 class="normal-link mt-2">
+                  <a href="#!" class="card-link text-dark font-weight-bolder"> Apple Helps FBI Nab Cop Car Firebomber After Refusing to Unlock San Bernardino Gunman's iPhone </a>
+                </h3>
+                <p class="card-text inside mt-2">"Apple CEO Tim Cook resisted the FBI's request in 2016 to unlock the iPhone of a suspect in the San Bernardino shooting."</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row px-3 mt-3">
+            <div class="col-sm-12 card border-0">
+              <div class="position-relative">
+                <img class="card-img-top" src="./images/newt-gingrich.jpg" alt="Card image cap" />
+                <div class="category py-2 px-2 d-block position-absolute py-2 px-2 d-block position-absolute main_white">
+                  <a href="" class="text-danger text-uppercase">news</a>
+                </div>
+              </div>
+              <div class="card-body px-0 py-0">
+                <h3 class="normal-link mt-2">
+                  <a href="#!" class="card-link text-dark font-weight-bolder"> Fox Shuts Down Newt Gingrich For Linking George Soros to Violent Protests </a>
+                </h3>
+                <p class="card-text inside mt-2">"The former Speaker of the House linked district attorneys who are "overwhelmingly elected with George Soros' money" to the cases of violence seen at Black Lives Matter protests."</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row px-3 mt-3">
+            <div class="col-sm-12 card border-0">
+              <div class="position-relative">
+                <img class="card-img-top" src="./images/kanye-west.jpg" alt="Card image cap" />
+                <div class="category py-2 px-2 d-block position-absolute py-2 px-2 d-block position-absolute main_white">
+                  <a href="" class="text-danger text-uppercase">culture</a>
+                </div>
+              </div>
+              <div class="card-body px-0 py-0">
+                <h3 class="normal-link mt-2">
+                  <a href="#!" class="card-link text-dark font-weight-bolder"> Kanye West Kicked Off Twitter For 12 Hours For Violating Its Rules </a>
+                </h3>
+                <p class="card-text inside mt-2">"West has been tweeting liberally this week, with fans concerned for his mental health. On Wednesday night he doxed a journalist by sharing a personal phone number and violating Twitter rules."</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row px-3 mt-3">
+            <div class="col-sm-12 card border-0">
+              <div class="position-relative">
+                <img class="card-img-top" src="./images/lafayette.jpg" alt="Card image cap" />
+                <div class="category py-2 px-2 d-block position-absolute py-2 px-2 d-block position-absolute main_white">
+                  <a href="" class="text-danger text-uppercase">us</a>
+                </div>
+              </div>
+              <div class="card-body px-0 py-0">
+                <h3 class="normal-link mt-2">
+                  <a href="#!" class="card-link text-dark font-weight-bolder text-decoration-none"> Trump Admin Wanted to Use 'Heat Ray' on Protesters </a>
+                </h3>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item px-0 py-0">
+                    <p class="card-text inside mt-2">A military whistleblower said federal officials asked about crowd control technology hours before protesters were forcibly cleared from Lafayette Square in Washington, D.C.</p>
+                  </li>
+                  <li class="list-group-item px-0 py-1">
+                    <h3 class="normal-link mt-2">
+                      <a href="#!" class="card-link text-dark font-weight-bolder"> 'Like Opening Up An Oven Door'—Watch 'Heat Ray' Feds Wanted to Use on Protesters in Action </a>
+                    </h3>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- the section for feature stories end here -->
+        </div>
+
+        <div class="col-lg-3 h-25 px-lg-0 ml-lg-3 order-lg-2 col-md-12 order-md-3 debating">
+          <!-- the debate section -->
+          <div class="w-100 text-muted text-uppercase mt-3 pb-3 debate_border font-weight-bolder">the debate</div>
+          <div class="media pt-2 pb-1 mt-2">
+            <img src="./images/jamil-n-jaffer.png" class="mr-3 media_img" alt="jamin n.jaffer" />
+            <div class="media-body font-weight-bolder">
+              <h5 class="mt-0">
+                <a href="#" class="stretched-link text-dark">The Best (Cyber) Defense Is a Good (Cyber) Offense</a>
+              </h5>
+              <div class="author"><span class="media_by fs-12"> BY </span><span class="text-uppercase span_media fs-12">jamin n.jaffer</span></div>
+            </div>
+          </div>
+          <div class="bigline position-relative">
+            <div class="vs my-2 mx-auto text-center text-white fs-12 rounded-circle ffam font-weight-bold position-relative">VS</div>
+          </div>
+
+          <div class="media pt-2 pb-1 mt-2 debate_border">
+            <div class="media-body font-weight-bolder">
+              <h5 class="mt-0 mb-1">
+                <a href="#" class="stretched-link text-dark"> The U.S. Needs a Cyber Strategy Designed for Defense </a>
+              </h5>
+              <div class="author"><span class="media_by fs-12"> BY </span><span class="text-uppercase span_media fs-12">bonnie kristian</span></div>
+            </div>
+            <img class="d-flex ml-3 media_img" src="./images/bonnie-kristian.png" alt="Generic placeholder image" />
+          </div>
+
+          <!-- debate sections ends here -->
+
+          <!-- section for opinion starts here -->
+          <div class="w-100 ext-muted text-uppercase mt-3 pb-3 font-weight-bolder">opinion</div>
+          <ul class="list-unstyled">
+            <li class="media border-bottom pb-3">
+              <img src="./images/jenna-ellis.png" class="mr-3" alt="jenna-ellis" />
+              <div class="media-body">
+                <h5 class="mt-0 mb-1">
+                  <a href="#" class="stretched-link text-dark font-weight-bolder"> Save Our American System </a>
+                </h5>
+                <div class="author"><span class="media_by fs-12 font-weight-bold dark_gray"> BY </span><span class="text-uppercase span_media fs-12 font-weight-bold dark_gray">jenna-ellis</span></div>
+              </div>
+            </li>
+            <li class="media border-bottom py-3">
+              <img src="./images/arthur-lieber.png" class="mr-3" alt="arthur-lieber" />
+              <div class="media-body">
+                <h5 class="mt-0 mb-1">
+                  <a href="#" class="stretched-link text-dark font-weight-bolder"> How the Democratic Party Can Win Back the Trump Base </a>
+                </h5>
+                <div class="author"><span class="media_by fs-12 font-weight-bold dark_gray"> BY </span><span class="text-uppercase span_media fs-12 font-weight-bold dark_gray">arthur-lieber</span></div>
+              </div>
+            </li>
+            <li class="media border-bottom py-3">
+              <img src="./images/jason-d-greenblatt.png" class="mr-3" alt="Abraham Accords" />
+              <div class="media-body">
+                <h5 class="mt-0 mb-1">
+                  <a href="#" class="stretched-link text-dark font-weight-bolder"> The Abraham Accords Are a Sanctification of God's Name </a>
+                </h5>
+                <div class="author"><span class="media_by fs-12 font-weight-bold"> BY </span><span class="text-uppercase span_media fs-12 font-weight-bold dark_gray">jason-d-greenblatt</span></div>
+              </div>
+            </li>
+            <li class="media border-bottom py-3">
+              <img src="./images/ilya-shapiro.png" class="mr-3" alt="Supreme Court" />
+              <div class="media-body">
+                <h5 class="mt-0 mb-1">
+                  <a href="#" class="stretched-link text-dark font-weight-bolder"> Trump's New Supreme Court List Serves a Different Purpose Than the Old One </a>
+                </h5>
+                <div class="author"><span class="media_by fs-12 font-weight-bold"> BY </span><span class="text-uppercase span_media fs-12 font-weight-bold dark_gray">iliya ilya-shapiro</span></div>
+              </div>
+            </li>
+            <li class="media border-bottom py-3">
+              <img src="./images/hans-von-spakovsky-courtney-baer.png" class="mr-3" alt="spakovsky" />
+              <div class="media-body">
+                <h5 class="mt-0 mb-1">
+                  <a href="#" class="stretched-link text-dark font-weight-bolder"> A Common-Sense Decision on Felon Voting in Florida </a>
+                </h5>
+                <div class="author"><span class="media_by fs-12 font-weight-bold"> BY </span><span class="text-uppercase span_media fs-12 font-weight-bold dark_gray">hans-von-spakovsky-courtney-baer</span></div>
+              </div>
+            </li>
+            <li class="media border-bottom py-3">
+              <img src="./images/jonathan-tobin.png" class="mr-3" alt="jonathan-tobin" />
+              <div class="media-body">
+                <h5 class="mt-0 mb-1">
+                  <a href="#" class="stretched-link text-dark font-weight-bolder"> Kushner And The Amateurs Better at Diplomacy Than The 'Experts' </a>
+                </h5>
+                <div class="author"><span class="media_by fs-12 font-weight-bold"> BY </span><span class="text-uppercase span_media fs-12 font-weight-bold dark_gray">jonathan-tobin</span></div>
+              </div>
+            </li>
+            <li class="media py-3">
+              <img src="./images/john-dale-grover.png" class="mr-3" alt="john-dale-grover" />
+              <div class="media-body">
+                <h5 class="mt-0 mb-1">
+                  <a href="#" class="stretched-link text-dark font-weight-bolder"> The Wildfires Show How the Forever Wars Harm Americans at Home </a>
+                </h5>
+                <div class="author"><span class="media_by fs-12 font-weight-bold"> BY </span><span class="text-uppercase span_media fs-12 font-weight-bold dark_gray">john-dale-grover</span></div>
+              </div>
+            </li>
+          </ul>
+          <!-- the opinion section ends here -->
+        </div>
+
+        <div class="col-lg-3 h-50 order-lg-3 col-md-5 order-8 first_advert">
+          <!-- first section of advertisements starts here -->
+          <div class="row px-3 mt-3">
+            <div class="col-sm-12 card border-0">
+              <div class="position-relative">
+                <img class="card-img-top" src="./images/best-online-shops-2021.png" alt="Card image cap" />
+                <div class="category py-2 px-2 d-block position-absolute py-2 px-2 d-block position-absolute main_white">
+                  <a href="" class="text-primary text-uppercase">rankings</a>
+                </div>
+              </div>
+              <div class="card-body border">
+                <h3 class="normal-link">
+                  <a href="#!" class="card-link text-dark font-weight-bolder"> Best Online Shops 2021</a>
+                </h3>
+                <p class="card-text inside mt-2">"Newsweek and Statista are recognizing 1,000 shops across 39 categories in eight groups."</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row px-3 mt-3">
+            <div class="card border-0">
+              <div class="position-relative">
+                <img class="card-img-top" src="./images/americas-best-physical-rehabilitation-centers-2020.png" alt="Card image cap" />
+                <div class="category py-2 px-2 d-block position-absolute py-2 px-2 d-block position-absolute main_white">
+                  <a href="" class="text-primary text-uppercase">rankings</a>
+                </div>
+              </div>
+              <div class="card-body border">
+                <h3 class="normal-link">
+                  <a href="#!" class="card-link text-dark font-weight-bolder"> America's Best Physical Rehabilitation Centers 2020</a>
+                </h3>
+                <p class="card-text inside mt-2">"Finding reliable rehabilitation can be a challenge. We partnered with Statista to rank the country's Best Physical Rehabilitation Centers.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row px-3 mt-3">
+            <div class="col-sm-12 card border-0">
+              <div class="position-relative">
+                <img class="card-img-top" src="./images/brandspark.png" alt="Card image cap" />
+                <div class="category py-2 px-2 d-block position-absolute py-2 px-2 d-block position-absolute main_white">
+                  <a href="" class="text-primary text-uppercase">take the survey</a>
+                </div>
+              </div>
+              <div class="card-body border">
+                <h3 class="normal-link">
+                  <a href="#!" class="card-link text-dark font-weight-bolder"> What Brands do You Trust the Most?</a>
+                </h3>
+                <p class="card-text inside mt-2">Tell us for a chance to win. 2020 Brandspark Most Trusted Awards. Voted by consumers like you.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row px-3 mt-3">
+            <div class="col-sm-12 card border-0">
+              <div class="position-relative">
+                <img class="card-img-top" src="./images/best-maternity-hospitals-2020.png" alt="Card image cap" />
+                <div class="category py-2 px-2 d-block position-absolute py-2 px-2 d-block position-absolute main_white">
+                  <a href="" class="text-primary text-uppercase">rankins</a>
+                </div>
+              </div>
+              <div class="card-body border">
+                <h3 class="normal-link">
+                  <a href="#!" class="card-link text-dark font-weight-bolder"> Best Maternity Hospitals 2020</a>
+                </h3>
+                <p class="card-text inside mt-2">The facilities cited by Newsweek are an elite group demonstrating excellence in maternity care. Check the full list here</p>
+              </div>
+            </div>
+          </div>
+          <!-- the first advertisement section ends here -->
+        </div>
+
+        <div class="col-lg-5 h-50 order-lg-5 more col-md-6 order-md-7">
+          <!-- more stores section starts here -->
+          <div class="w-100 text-muted text-uppercase mt-3 pb-3 font-weight-bolder">more stories</div>
+          <ul class="list-unstyled clearfix">
+            <li class="media d-inline pb-3">
+              <img src="./images/biden-obama.jpg" class="mr-3 d-inline float-left newsize" alt="Obama" />
+              <div class="media-body border-bottom">
+                <h4 class="mt-0 mb-1 more_stories">
+                  <a href="#" class="stretched-link text-dark font-weight-bolder"> Obama Book Coming Post-Election Saves Former President Overshadowing Biden </a>
+                </h4>
+                <span class="inside_info">The first volume of the former president's upcoming memoir is due to be released two weeks after election day.</span>
+              </div>
+            </li>
+          </ul>
+
+          <ul class="list-unstyled clearfix">
+            <li class="media d-inline pb-3">
+              <img src="./images/joe-biden.jpg" class="mr-3 d-inline float-left newsize" alt="Biden" />
+              <div class="media-body border-bottom">
+                <h4 class="mt-0 mb-1 more_stories">
+                  <a href="#" class="stretched-link text-dark font-weight-bolder more_stories"> Biden Nearly 5 Times More Likely than Trump to Win Election, Models Show </a>
+                </h4>
+                <span class="inside_info">In all the models used, Democratic presidential candidate Joe Biden was predicted to defeat President Donald Trump in both the popular vote and the Electoral College.</span>
+              </div>
+            </li>
+          </ul>
+
+          <ul class="list-unstyled clearfix">
+            <li class="media d-inline pb-3">
+              <img src="./images/bobcat-fire-juniper-hills-california-september-2020.jpg" class="mr-3 d-inline float-left newsize" alt="Wildfire" />
+              <div class="media-body border-bottom">
+                <h4 class="mt-0 mb-1 more_stories">
+                  <a href="#" class="stretched-link text-dark font-weight-bolder more_stories"> California Fire Update, Bobcat Blaze Spreads in 'Several Directions' </a>
+                </h4>
+                <span class="inside_info">Around 7,900 wildfires have burned over 3.4 million acres of California so far this year.</span>
+              </div>
+            </li>
+          </ul>
+
+          <ul class="list-unstyled clearfix">
+            <li class="media d-inline pb-3">
+              <img src="./images/new-york-city-coroanvirus-pandemic-getty-mask.jpg" class="mr-3 d-inline float-left newsize" alt="Voters" />
+              <div class="media-body border-bottom">
+                <h4 class="mt-0 mb-1 more_stories">
+                  <a href="#" class="stretched-link text-dark font-weight-bolder more_stories"> Exclusive Poll: One in Six U.S. Voters Never Wear Mask on Public Transport </a>
+                </h4>
+                <span class="inside_info">The survey for Newsweek also looked at people's mask-wearing habits in other locations, including at the grocery store.</span>
+              </div>
+            </li>
+          </ul>
+
+          <ul class="list-unstyled clearfix">
+            <li class="media d-inline pb-3">
+              <img src="./images/prime-minister-boris-johnson-visits-oxfordshire.jpg" class="mr-3 d-inline float-left newsize" alt="Covid-19" />
+              <div class="media-body border-bottom">
+                <h4 class="mt-0 mb-1 more_stories">
+                  <a href="#" class="stretched-link text-dark font-weight-bolder more_stories">Boris Johnson Says Second Wave of COVID-19 is Happening Across U.K.</a>
+                </h4>
+                <span class="inside_info">4,322 new COVID-19 cases in the U.K. were confirmed today, a rise of nearly 1,000 on yesterday's numbers according to Public Health England.</span>
+              </div>
+            </li>
+          </ul>
+
+          <ul class="list-unstyled clearfix">
+            <li class="media d-inline pb-3">
+              <img src="./images/miles-taylor-cnn.png" class="mr-3 d-inline float-left newsize" alt="Aide's" />
+              <div class="media-body border-bottom">
+                <h4 class="mt-0 mb-1 more_stories">
+                  <a href="#" class="stretched-link text-dark font-weight-bolder more_stories">Ex-Pence Aide's Endorsing Biden Will Start 'Chain Reaction': Ex-Official</a>
+                </h4>
+                <span class="inside_info">Former Homeland Security Department chief of staff says he heard the vice president praise former aide Olivia Troye, whom he later called a "disgruntled employee" when she criticized Trump.</span>
+              </div>
+            </li>
+          </ul>
+
+          <ul class="list-unstyled clearfix">
+            <li class="media d-inline pb-3">
+              <img src="./images/oregon-fire.jpg" class="mr-3 d-inline float-left newsize" alt="Oregon" />
+              <div class="media-body border-bottom">
+                <h4 class="mt-0 mb-1 more_stories">
+                  <a href="#" class="stretched-link text-dark font-weight-bolder more_stories">Oregon Fire Map, Update, Storm to Help Firefighters Battle the Blazes</a>
+                </h4>
+                <span class="inside_info">A storm in the early hours of Friday may help contain the wildfires as Gov. Kate Brown says: "Our firefighters are grateful for rain."</span>
+              </div>
+            </li>
+          </ul>
+
+          <ul class="list-unstyled clearfix">
+            <li class="media d-inline pb-3">
+              <img src="./images/north-dakota-flag.jpg" class="mr-3 d-inline float-left newsize" alt="North Dakota" />
+              <div class="media-body border-bottom">
+                <h4 class="mt-0 mb-1 more_stories">
+                  <a href="#" class="stretched-link text-dark font-weight-bolder more_stories">North Dakota, With No Mask Mandate, Now Has Highest Infection Rate in U.S.</a>
+                </h4>
+                <span class="inside_info">North Dakota health officials confirmed a new record for active coronavirus cases in the state on Monday, making it the highest rate of infections of any state in the country over this period.</span>
+              </div>
+            </li>
+          </ul>
+
+          <ul class="list-unstyled clearfix">
+            <li class="media d-inline pb-3">
+              <img src="./images/ex-iranian-president-mahmoud-ahmadinejad.jpg" class="mr-3 d-inline float-left newsize" alt="Ahmadinejad" />
+              <div class="media-body border-bottom">
+                <h4 class="mt-0 mb-1 more_stories">
+                  <a href="#" class="stretched-link text-dark font-weight-bolder more_stories">Ahmadinejad Talks About Twitter, Told It Was Banned When He Was President</a>
+                </h4>
+                <span class="inside_info">Former Iranian president Ahmadinejad was also challenged by Radio Free Europe about his human rights record.</span>
+              </div>
+            </li>
+          </ul>
+
+          <ul class="list-unstyled clearfix">
+            <li class="media d-inline pb-3">
+              <img src="./images/trump-wisconsin-mosinee.jpg" class="mr-3 d-inline float-left newsize" alt="Wisconsin" />
+              <div class="media-body border-bottom">
+                <h4 class="mt-0 mb-1 more_stories">
+                  <a href="#" class="stretched-link text-dark font-weight-bolder more_stories">In Wisconsin, Where Riots Flared, Trump Tells Rally 'I Saved the Suburbs'</a>
+                </h4>
+                <span class="inside_info">Wisconsin is a crucial battleground state—one which Trump won only narrowly in 2016—but three recent polls put Democratic presidential hopeful Joe Biden in the lead.</span>
+              </div>
+            </li>
+          </ul>
+
+          <ul class="list-unstyled clearfix">
+            <li class="media d-inline pb-3">
+              <img src="./images/stimulus-check-three-million-unclaimed.jpg" class="mr-3 d-inline float-left newsize" alt="3 Million People Could Be Eligible for a Stimulus " />
+              <div class="media-body border-bottom">
+                <h4 class="mt-0 mb-1 more_stories">
+                  <a href="#" class="stretched-link text-dark font-weight-bolder more_stories">3 Million People Could Be Eligible for a Stimulus Check in Four States</a>
+                </h4>
+                <span class="inside_info">People who may be eligible for a payment but have yet to receive one have until October 15 to claim their stimulus check.</span>
+              </div>
+            </li>
+          </ul>
+          <!-- the more stories section ends here -->
+        </div>
+
+        <div class="row offset-lg-1 col-lg-5 px-3 ml-0 order-lg-4 travel h-25 col-md-6 order-md-3">
+          <!-- the my turn cultural and travel starts here -->
+          <div class="row w-100 text-muted text-uppercase ml-0 mt-3 h-25 font-weight-bolder">my turn</div>
+          <div class="row px-2 mx-0 mt-3 col-lg-4 col-md-4">
+            <div class="col-sm-12 card border-0">
+              <div class="position-relative"><img class="card-img-top" src="./images/restaurant-airplane-food-aviation.jpg" alt="Card image cap" /></div>
+              <div class="card-body px-0 pt-2 pb-3">
+                <h3 class="fs-14">
+                  <a href="#!" class="card-link text-muted font-weight-bolder"> 'I Built a Restaurant Inside a Boeing KC-97 U.S. Air Force Aircraft'</a>
+                </h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="row px-2 mx-0 mt-3 col-lg-4 col-md-4">
+            <div class="col-sm-12 card border-0">
+              <div class="position-relative"><img class="card-img-top" src="./images/sapiosexuality-relationships-dating.jpg" alt="Card image cap" /></div>
+              <div class="card-body px-0 pt-2 pb-3">
+                <h3 class="fs-14">
+                  <a href="#!" class="card-link text-muted font-weight-bolder fs-14"> "This Is What It's Like to Be Sapiosexual"</a>
+                </h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="row px-2 mx-0 mt-3 col-lg-4 col-md-4">
+            <div class="col-sm-12 card border-0">
+              <div class="position-relative"><img class="card-img-top" src="./images/covid-19-coronavirus-vaccine-doctor-trials.jpg" alt="Card image cap" /></div>
+              <div class="card-body px-0 pt-2 pb-3">
+                <h3 class="fs-14">
+                  <a href="#!" class="card-link text-muted font-weight-bolder"> 'I'm Working on a COVID-19 Vaccine' </a>
+                </h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="row w-100 text-muted text-uppercase ml-0 mt-3 font-weight-bolder">culture & travel</div>
+          <div class="row px-2 mx-0 mt-3 col-lg-4 col-md-4">
+            <div class="col-sm-12 card border-0">
+              <div class="position-relative">
+                <img class="card-img-top" src="./images/san-marino.jpg" alt="Card image cap" />
+                <div class="category_culture py-0 px-2 d-block position-absolute main_white">
+                  <a href="" class="text-primary text-uppercase ffam font-weight-bold">travel</a>
+                </div>
+              </div>
+              <div class="card-body px-0 pt-2 pb-3">
+                <h3 class="fs-14">
+                  <a href="#!" class="card-link text-muted font-weight-bolder fs-14"> The Countries With the Least Amount of Travel Buzz, According to Google </a>
+                </h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="row px-2 mx-0 mt-3 col-lg-4 col-md-4">
+            <div class="col-sm-12 card border-0">
+              <div class="position-relative">
+                <img class="card-img-top" src="./images/long-way-hero-2.jpg" alt="Card image cap" />
+                <div class="category_culture py-0 px-2 d-block position-absolute main_white">
+                  <a href="" class="text-primary text-uppercase ffam font-weight-bold">travel</a>
+                </div>
+              </div>
+              <div class="card-body px-0 pt-2 pb-3">
+                <h3 class="fs-14">
+                  <a href="#!" class="card-link text-muted font-weight-bolder fs-14"> Choose Electric: Ewan McGregor Rides Into the Future in 'Long Way Up' </a>
+                </h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="row px-2 mx-0 mt-3 col-lg-4 col-md-4">
+            <div class="col-sm-12 card border-0">
+              <div class="position-relative">
+                <img class="card-img-top" src="./images/met.jpg" alt="Card image cap" />
+                <div class="category_culture py-0 px-2 d-block position-absolute main_white">
+                  <a href="" class="text-primary text-uppercase ffam font-weight-bold">museums</a>
+                </div>
+              </div>
+              <div class="card-body px-0 pt-2 pb-3">
+                <h3 class="fs-14">
+                  <a href="#!" class="card-link text-muted font-weight-bolder fs-14"> Planning a Trip to One of NYC's Recently Opened Museums? What to Know</a>
+                </h3>
+              </div>
+            </div>
+          </div>
+          <!-- the culture and travel ends here -->
+        </div>
+
+        <div class="col-lg-3 h-50 order-lg-12 offset-lg-8 free col-md-5 order-md-8 offset-md-4">
+          <!-- the advertise above the form  -->
+          <div class="row px-3 mt-3">
+            <div class="col-sm-12 card border-0">
+              <div class="position-relative">
+                <img class="card-img-top" src="./images/image-3-this-startup-making.jpg" alt="Card image cap" />
+                <div class="category py-2 px-2 d-block position-absolute py-2 px-2 d-block position-absolute main_white">
+                  <a href="" class="text-primary text-uppercase">sponsored insights</a>
+                </div>
+              </div>
+              <div class="card-body border">
+                <h3 class="normal-link">
+                  <a href="#!" class="card-link text-dark font-weight-bolder"> This Startup Is Making Long Distance Real Estate Investing Possible for Millennials</a>
+                </h3>
+                <p class="card-text inside mt-2">75% of Roofstock users are first-time real estate investors, and more than half are under 35.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- the submit form starts here -->
+          <div class="card">
+            <div class="card-body bg-light">
+              <form class="col-sm-12">
+                <div class="form-group">
+                  <label for="exampleInputEmail1" class="text-uppercase font-weight-bolder mb-3 pl-5 fs-19 label_img">Start your day with our top 5 articles</label>
+                  <input type="email" placeholder="Email address" class="form-control" id="exampleInputEmail1" />
+                </div>
+                <button type="submit" class="btn btn-block btn-danger text-uppercase mt-2">free sign up<i class="fas fa-chevron-right right ml-2"></i></button>
+              </form>
+            </div>
+          </div>
+          <!-- the form ends here -->
+        </div>
+
+        <div class="col-lg-3 order-lg-11 offset-lg-0 survey col-md-5 order-md-8 offset-md-4">
+          <!-- the second round of advertisement starts here -->
+          <div class="row px-3 mt-3">
+            <div class="col-sm-12 card border-0">
+              <div class="position-relative">
+                <img class="card-img-top" src="./images/florida-polytechnic-university.jpg" alt="Card image cap" />
+                <div class="category py-2 px-2 d-block position-absolute py-2 px-2 d-block position-absolute main_white">
+                  <a href="" class="text-primary text-uppercase">sponsored insights</a>
+                </div>
+              </div>
+              <div class="card-body border">
+                <h3 class="normal-link">
+                  <a href="#!" class="card-link text-dark font-weight-bolder">What Could a Career in Engineering or Computer Science Do For You? </a>
+                </h3>
+                <p class="card-text inside mt-2">Could this be the perfect time for you to pursue a career in engineering or computer science? Find out how to get started.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row px-3 mt-3">
+            <div class="col-sm-12 card border-0">
+              <div class="position-relative">
+                <img class="card-img-top" src="./images/sweet-james-accident-attorneys-v2.jpg" alt="Card image cap" />
+                <div class="category py-2 px-2 d-block position-absolute py-2 px-2 d-block position-absolute main_white">
+                  <a href="" class="text-primary text-uppercase">sponsored insights</a>
+                </div>
+              </div>
+              <div class="card-body border">
+                <h3 class="normal-link">
+                  <a href="#!" class="card-link text-dark font-weight-bolder">What Makes the Best Lawyers Stand Out?</a>
+                </h3>
+                <p class="card-text inside mt-2">The unthinkable has happened and you need a good lawyer to turn to, how do you chose?</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row px-3 mt-3">
+            <div class="col-sm-12 card border-0">
+              <div class="position-relative">
+                <img class="card-img-top" src="./images/worlds-best-hospitals-2021.png" alt="Card image cap" />
+                <div class="category py-2 px-2 d-block position-absolute py-2 px-2 d-block position-absolute main_white">
+                  <a href="" class="text-primary text-uppercase">survey</a>
+                </div>
+              </div>
+              <div class="card-body border">
+                <h3 class="normal-link">
+                  <a href="#!" class="card-link text-dark font-weight-bolder">The Best Hospitals in the World</a>
+                </h3>
+                <p class="card-text inside mt-2">Newsweek has partnered with Statista Inc., the global market research and consumer data firm, to develop the ranking of the world's best hospitals for the third year.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row px-3 mt-3">
+            <div class="col-sm-12 card border-0">
+              <div class="position-relative">
+                <img class="card-img-top" src="./images/americas-best-addiction-treatment-centers-2020.png" alt="Card image cap" />
+                <div class="category py-2 px-2 d-block position-absolute py-2 px-2 d-block position-absolute main_white">
+                  <a href="" class="text-primary text-uppercase">rankings</a>
+                </div>
+              </div>
+              <div class="card-body border">
+                <h3 class="normal-link">
+                  <a href="#!" class="card-link text-dark font-weight-bolder">America's Best Addiction Treatment Centers 2020</a>
+                </h3>
+                <p class="card-text inside mt-2">Newsweek partnered with global market research firm Statista Inc. to rank the best U.S. treatment facilities that focus on addiction..</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row px-3 mt-3">
+            <div class="col-sm-12 card border-0">
+              <div class="position-relative">
+                <img class="card-img-top" src="./images/infection-prevention-products-banner.jpg" alt="Card image cap" />
+                <div class="category py-2 px-2 d-block position-absolute py-2 px-2 d-block position-absolute main_white">
+                  <a href="" class="text-primary text-uppercase">rankings</a>
+                </div>
+              </div>
+              <div class="card-body border">
+                <h3 class="normal-link">
+                  <a href="#!" class="card-link text-dark font-weight-bolder">Best Infection Prevention Products</a>
+                </h3>
+                <p class="card-text inside mt-2">During the coronavirus outbreak, health care is more important than ever. In Newsweek's first Best Health Care series, we highlight the best infection prevention products.</p>
+              </div>
+            </div>
+          </div>
+          <!-- the second round of advertisement ends here -->
+        </div>
+      </div>
+
+      <div class="container-fluid position-relative another px-0">
+        <h4 class="card-title border-bottom pl-5 py-3 align-middle text-uppercase text-center edit_label_img fs-20">
+          <img src="./images/favicon-32x32.png" class="img-fluid" alt="Favicon" />
+          in the magazine
+        </h4>
+        <div class="row col-lg-12 mx-0 px-0 col-md-12">
+          <!-- In the magazine section starts here -->
+
+          <div class="card border-0 mt-3 px-3 col-lg-3 col-md-3 px-sm-0">
+            <div class="row px-0 px-md-3 mt-3">
+              <div class="col-sm-12 card border-0">
+                <div class="position-relative">
+                  <img class="card-img-top" src="./images/fe-vaccines-banner.jpg" alt="Card image cap" />
+                  <div class="category py-2 px-2 d-block position-absolute py-2 px-2 d-block position-absolute main_white">
+                    <a href="" class="text-danger text-uppercase">December 31 ISSUE</a>
+                  </div>
+                </div>
+                <div class="card-body px-0 py-0">
+                  <button class="btn btn-block subcolor text-uppercase font-weight-bolder" type="button">See All Features<i class="fas fa-chevron-right right ml-2"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row mt-3 col-lg-3 px-0 mx-0 px-md-3 col-md-3">
+            <div class="col-sm-12 card border-0">
+              <div class="position-relative">
+                <img class="card-img-top" src="./images/anthony-fauci-washington-dc-getty.jpg" alt="Card image cap" />
+                <div class="categori py-2">
+                  <span class="text-uppercase font-weight-bolder py-1 px-2 text-white mr-2 bg_mag">features</span>
+                  <a href="" class="text-danger text-uppercase font-weight-bolder">news</a>
+                </div>
+              </div>
+              <div class="card-body px-0 py-0">
+                <h3 class="normal-link mt-2 fs-16">
+                  <a href="#!" class="card-link text-dark font-weight-bolder">Dr. Fauci Would Bet 10 Cents on Trump Having Vaccine by November, December</a>
+                </h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="row mt-3 col-lg-3 px-0 mx-0 px-md-3 col-md-3">
+            <div class="col-sm-12 card border-0">
+              <div class="position-relative">
+                <img class="card-img-top" src="./images/florida-representative-donna-shalala.jpg" alt="Card image cap" />
+                <div class="categori py-2">
+                  <span class="text-uppercase font-weight-bolder py-1 px-2 text-white mr-2 bg_mag">periscope</span>
+                  <a href="" class="text-danger text-uppercase font-weight-bolder">politics</a>
+                </div>
+              </div>
+              <div class="card-body px-0 py-0">
+                <h3 class="normal-link mt-2 fs-16">
+                  <a href="#!" class="card-link text-dark font-weight-bolder">Florida Dem Rep Shalala Admits Squad Sometimes Pisses Her Off, Lets Loose on 'Idiotic' Trump</a>
+                </h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="row mt-3 col-lg-3 px-0 mx-0 px-md-3 col-md-3">
+            <div class="col-sm-12 card border-0">
+              <div class="position-relative">
+                <img class="card-img-top" src="./images/per-young-conservatives-01-142740014jpg.jpg" alt="Card image cap" />
+                <div class="categori py-2">
+                  <span class="text-uppercase font-weight-bolder py-1 px-2 text-white mr-2 bg_mag">periscope</span>
+                  <a href="" class="text-danger text-uppercase font-weight-bolder">politics</a>
+                </div>
+              </div>
+              <div class="card-body px-0 py-0">
+                <h3 class="normal-link mt-2 fs-16">
+                  <a href="#!" class="card-link text-dark font-weight-bolder">Here Are the Young, Diverse Conservative Stars Progressives Need to Fear</a>
+                </h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="row mt-3 col-lg-3 px-0 mx-0 px-md-3 col-md-3">
+            <div class="col-sm-12 card border-0">
+              <div class="position-relative">
+                <img class="card-img-top" src="./images/cul-ps-janelle-monae.jpg" alt="Card image cap" />
+                <div class="categori py-2">
+                  <span class="text-uppercase font-weight-bolder py-1 px-2 text-white mr-2 bg_mag">downtime</span>
+                  <a href="" class="text-danger text-uppercase font-weight-bolder">culture</a>
+                </div>
+              </div>
+              <div class="card-body px-0 py-0">
+                <h3 class="normal-link mt-2 fs-16">
+                  <a href="#!" class="card-link text-dark font-weight-bolder">Janelle Monáe's Film 'Antebellum' Shows the Horrors of Systemic Racism</a>
+                </h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="row mt-3 col-lg-3 px-0 mx-0 px-md-3 col-md-3">
+            <div class="col-sm-12 card border-0">
+              <div class="position-relative">
+                <img class="card-img-top" src="./images/facing.jpg" alt="Card image cap" />
+                <div class="category_last py-2 px-1 bg_mag mr-2 position-absolute main_white">
+                  <a href="" class="text-uppercase text-white font-weight-bolder">in focus</a>
+                </div>
+              </div>
+              <div class="card-body px-0 py-0">
+                <h3 class="normal-link mt-2 fs-16">
+                  <a href="#!" class="card-link text-uppercase text-dark font-weight-bolder">Facing Up</a>
+                </h3>
+              </div>
+            </div>
+          </div>
+          <!-- In the magazine sections ends here -->
+        </div>
+
+        <h4 class="card-title border-bottom py-3 align-middle text-uppercase text-center fs-20">
+          <img src="./images/favicon-32x32.png" class="img-fluid" alt="Editor Pick" />
+          editor's pick
+        </h4>
+        <div class="row col-lg-12 px-0 mx-0 mb-4 col-md-12">
+          <!-- The editor´s pick section starts here -->
+          <div class="card border-0 mt-3 px-0 col-lg-3 col-md-6">
+            <div class="row px-0 mx-0 px-md-3">
+              <div class="col-sm-12 card border-0">
+                <div class="position-relative">
+                  <img class="card-img-top" src="./images/biden-clinton.jpg" alt="Card image cap" />
+                  <div class="category py-2 px-2 d-block position-absolute py-2 px-2 d-block position-absolute main_white">
+                    <a href="" class="text-danger text-uppercase ffam font-weight-bold">politics</a>
+                  </div>
+                </div>
+                <div class="card-body px-0 py-0">
+                  <h3 class="normal-link mt-2">
+                    <a href="#!" class="card-link text-dark font-weight-bolder"> Pollsters Warn Comparing Joe Biden and Hillary Clinton Is Pointless</a>
+                  </h3>
+                  <p class="card-text inside mt-2">While it is easy to compare the two Democratic presidential candidates, pollsters have suggested doing so might not be as simple as a like for like analysis.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row px-0 mx-0 mt-3 col-lg-3 px-md-3 col-md-6">
+            <div class="col-sm-12 card border-0">
+              <div class="position-relative">
+                <img class="card-img-top" src="./images/rbg-rally-graham.jpg" alt="Card image cap" />
+                <div class="category py-2 px-2 d-block position-absolute main_white">
+                  <a href="" class="text-danger text-uppercase ffam font-weight-bold">u.s.</a>
+                </div>
+              </div>
+              <div class="card-body px-0 py-0">
+                <h3 class="normal-link mt-2">
+                  <a href="#!" class="card-link text-dark font-weight-bolder"> Trump Supporters Clash With Protesters Over Supreme Court Vacancy</a>
+                </h3>
+                <p class="card-text inside mt-2">Leading Republicans, including Graham, have previously argued that a sitting president should not consider a Supreme Court choice in the run-up to an election.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row px-0 mx-0 mt-3 col-lg-3 px-md-3 col-md-6">
+            <div class="col-sm-12 card border-0">
+              <div class="position-relative">
+                <img class="card-img-top" src="./images/magellanic-penguins.jpg" alt="Card image cap" />
+                <div class="category py-2 px-2 d-block position-absolute main_white">
+                  <a href="" class="text-danger text-uppercase ffam font-weight-bold">tech & science</a>
+                </div>
+              </div>
+              <div class="card-body px-0 py-0">
+                <h3 class="normal-link mt-2">
+                  <a href="#!" class="card-link text-dark font-weight-bolder"> Penguin Found Dead With Whole Face Mask in Its Stomach</a>
+                </h3>
+                <p class="card-text inside mt-2">Discarded face masks are frequently being found lying on beaches in Brazil, local marine conservationists have said.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row px-0 mx-0 mt-3 col-lg-3 px-md-3 col-md-6">
+            <div class="col-sm-12 card border-0">
+              <div class="position-relative">
+                <img class="card-img-top" src="./images/coronavirus-china-getty.jpg" alt="Card image cap" />
+                <div class="category py-2 px-2 d-block position-absolute main_white">
+                  <a href="" class="text-danger text-uppercase ffam font-weight-bold">health</a>
+                </div>
+              </div>
+              <div class="card-body px-0 py-0">
+                <h3 class="normal-link mt-2">
+                  <a href="#!" class="card-link text-dark font-weight-bolder"> How China Beat Coronavirus Over the Last Six Months</a>
+                </h3>
+                <p class="card-text inside mt-2">The country where the virus is thought to have emerged rarely reports daily case counts in the hundreds since the spring. But at what cost?</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row px-0 mx-0 mt-3 col-lg-3 px-md-3 col-md-6">
+            <div class="col-sm-12 card border-0">
+              <div class="position-relative">
+                <img class="card-img-top" src="./images/president-donald-trump-walks-toward-press.jpg" alt="Card image cap" />
+                <div class="category py-2 px-2 d-block position-absolute main_white">
+                  <a href="" class="text-danger text-uppercase ffam font-weight-bold">politics</a>
+                </div>
+              </div>
+              <div class="card-body px-0 py-0">
+                <h3 class="normal-link mt-2">
+                  <a href="#!" class="card-link text-dark font-weight-bolder"> Trump Says Democrats Are 'Denigrating' Coronavirus Vaccine </a>
+                </h3>
+                <p class="card-text inside mt-2">President Trump has claimed a coronavirus vaccine could be available before the election on November 3.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row px-0 mx-0 mt-3 col-lg-3 px-md-3 col-md-6">
+            <div class="col-sm-12 card border-0">
+              <div class="position-relative">
+                <img class="card-img-top" src="./images/biden.jpg" alt="Card image cap" />
+                <div class="category py-2 px-2 d-block position-absolute main_white">
+                  <a href="" class="text-danger text-uppercase ffam font-weight-bold">politics</a>
+                </div>
+              </div>
+              <div class="card-body px-0 py-0">
+                <h3 class="normal-link mt-2">
+                  <a href="#!" class="card-link text-dark font-weight-bolder"> Biden 'Approves' Trump Saying 'You'll Never Hear From Me Again' If He Loses </a>
+                </h3>
+                <p class="card-text inside mt-2">President Trump has claimed a coronavirus vaccine could be available before the election on November 3.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row px-0 mx-0 mt-3 col-lg-3 px-md-3 col-md-6">
+            <div class="col-sm-12 card border-0">
+              <div class="position-relative">
+                <img class="card-img-top" src="./images/jovita-idar-google-doodle.png" alt="Card image cap" />
+                <div class="category py-2 px-2 d-block position-absolute main_white">
+                  <a href="" class="text-danger text-uppercase ffam font-weight-bold">u.s.</a>
+                </div>
+              </div>
+              <div class="card-body px-0 py-0">
+                <h3 class="normal-link mt-2">
+                  <a href="#!" class="card-link text-dark font-weight-bolder"> Who is Jovita Idár? Google Doodle Celebrates Civil Rights Pioneer</a>
+                </h3>
+                <p class="card-text inside mt-2">Idár and her family helped establish the First Mexican Congress, which organized Mexican-Americans across Texas in the fight for civil rights.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row px-0 mx-0 mt-3 col-lg-3 px-md-3 col-md-6">
+            <div class="col-sm-12 card border-0">
+              <div class="position-relative">
+                <img class="card-img-top" src="./images/hurricane-sally-hits-gulf-coast.jpg" alt="Card image cap" />
+                <div class="category py-2 px-2 d-block position-absolute main_white">
+                  <a href="" class="text-danger text-uppercase ffam font-weight-bold">news</a>
+                </div>
+              </div>
+              <div class="card-body px-0 py-0">
+                <h3 class="normal-link mt-2">
+                  <a href="#!" class="card-link text-dark font-weight-bolder"> Florida Woman Swims Away From Hurricane Flood With Grandson On Her Back</a>
+                </h3>
+                <p class="card-text inside my-2">Ceteria Holley said she climbed on top of her dining room table as several feet of water engulfed her home in Pensacola on Wednesday.</p>
+              </div>
+            </div>
+            <!-- The editor´s pick section ends here -->
+          </div>
+        </div>
+
+        <h6 class="card-title text-uppercase border-top pt-3 text-danger font-weight-bolder title-link ffam">u.s.</h6>
+        <div class="col-lg-12 px-0 col-md-12 border-bottom">
+          <!-- section for the 2 cards and 3 on the right starts here-->
+          <div class="card-group">
+            <div class="row mt-3 col-lg-4 mr-3 pr-0 col-md-4">
+              <div class="col-sm-12 card border-0">
+                <div class="position-relative">
+                  <img class="card-img-top" src="./images/schools-reopen-heres-what-we-know-about-children-covid-19.jpg" alt="Card image cap" />
+                </div>
+                <div class="card-body px-0 py-0">
+                  <h4 class="fs-15">
+                    <a href="#!" class="card-link text-dark font-weight-bolder"> As Schools Reopen, Here's What We Know About Children and COVID-19 </a>
+                  </h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="row pr-0 mt-3 mr-2 col-lg-4 col-md-4">
+              <div class="col-sm-12 card border-0">
+                <div class="position-relative">
+                  <img class="card-img-top" src="./images/donald-trump-joe-biden.jpg" alt="Card image cap" />
+                </div>
+                <div class="card-body px-0 py-0">
+                  <h4 class="fs-15">
+                    <a href="#!" class="card-link text-dark font-weight-bolder"> Voter Interest in Election at Highest Level in 16 Years: Poll</a>
+                  </h4>
+                </div>
+              </div>
+            </div>
+
+            <ul class="list-unstyled px-0 mt-3 col-lg-4 col-md-4">
+              <li class="media border-bottom pb-3">
+                <img src="./images/donald-trump-curve-hand-woman.jpg" class="mr-3 inside_media_img" alt="Trump" />
+                <div class="media-body">
+                  <h5 class="mt-0 mb-1 fs-19">
+                    <a href="#" class="stretched-link text-dark font-weight-bolder"> Trump Uses Curve Gesture While Saying He'll Nominate a Woman to SCOTUS </a>
+                  </h5>
+                </div>
+              </li>
+              <li class="media border-bottom py-3">
+                <img src="./images/powerball.jpg" class="mr-3 inside_media_img" alt="Power Ball" />
+                <div class="media-body">
+                  <h5 class="mt-0 mb-1 fs-19">
+                    <a href="#" class="stretched-link text-dark font-weight-bolder"> Powerball Results, Numbers for 9/19/20: Did Anyone Win the $20 Million? </a>
+                  </h5>
+                </div>
+              </li>
+              <li class="media border-bottom py-3">
+                <img src="./images/rbg.jpg" class="mr-3 inside_media_img" alt="Hometown Hero" />
+                <div class="media-body">
+                  <h5 class="mt-0 mb-1 fs-19">
+                    <a href="#" class="stretched-link text-dark font-weight-bolder"> NY to Honor 'Hometown Hero' Ruth Bader Ginsburg With Brooklyn Statue</a>
+                  </h5>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <h6 class="card-title border-top pt-3 text-danger font-weight-bolder title-link ffam">World</h6>
+          <div class="row">
+            <div class="card-group col-lg-12 col-md-12">
+              <div class="row pr-0 mt-3 mr-3 col-lg-4 col-md-4">
+                <div class="col-sm-12 card border-0">
+                  <div class="position-relative">
+                    <img class="card-img-top" src="./images/minks.jpg" alt="Card image cap" />
+                  </div>
+                  <div class="card-body px-0 py-0">
+                    <h4 class="fs-15">
+                      <a href="#!" class="card-link text-dark font-weight-bolder"> COVID Could Be Transmissible From Animals to Humans and Vice Versa </a>
+                    </h4>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row pr-0 mt-3 mr-2 col-lg-4 col-md-4">
+                <div class="col-sm-12 card border-0">
+                  <div class="position-relative">
+                    <img class="card-img-top" src="./images/china-east-theater-exercises.jpg" alt="Card image cap" />
+                  </div>
+                  <div class="card-body px-0 py-0">
+                    <h4>
+                      <a href="#!" class="card-link text-dark font-weight-bolder"> U.S. Slams China's 'Destabilizing' Military Actions During Taiwan Visit</a>
+                    </h4>
+                  </div>
+                </div>
+              </div>
+
+              <ul class="list-unstyled px-0 mt-3 col-lg-4 col-md-4">
+                <li class="media border-bottom pb-3">
+                  <img src="./images/india-security-kashmir-protests-srinagar.jpg" class="mr-3 inside_media_img" alt="India vs Pakistan" />
+                  <div class="media-body">
+                    <h5 class="mt-0 mb-1 fs-19">
+                      <a href="#" class="stretched-link text-dark font-weight-bolder"> India and Pakistan Clash on Border As China Conflict Looms Heavy </a>
+                    </h5>
+                  </div>
+                </li>
+                <li class="media border-bottom py-3">
+                  <img src="./images/prime-minister-boris-johnson-visits-oxfordshire.jpg" class="mr-3 inside_media_img" alt="Boris Johnson" />
+                  <div class="media-body">
+                    <h5 class="mt-0 mb-1 fs-19">
+                      <a href="#" class="stretched-link text-dark font-weight-bolder"> Boris Johnson Says Second Wave of COVID-19 is Happening Across U.K. </a>
+                    </h5>
+                  </div>
+                </li>
+                <li class="media border-bottom py-3">
+                  <img src="./images/russian-opposition-activist-alexei-navalny.jpg" class="mr-3 inside_media_img" alt="Russian Lawmaker" />
+                  <div class="media-body">
+                    <h5 class="mt-0 mb-1 fs-19">
+                      <a href="#" class="stretched-link text-dark font-weight-bolder"> Russian Lawmaker Says Germany May Have Been Behind Navalny Attack</a>
+                    </h5>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <h6 class="card-title border-top pt-3 text-danger font-weight-bolder title-link ffam">Business</h6>
+          <div class="row">
+            <div class="card-group px-2 col-lg-12 col-md-12">
+              <div class="row mt-3 mr-3 col-lg-4 pr-0 col-md-4">
+                <div class="col-sm-12 card border-0">
+                  <div class="position-relative">
+                    <img class="card-img-top" src="./images/pennsylvania-mask-restrictions-lifted-judge.jpg" alt="Card image cap" />
+                  </div>
+                  <div class="card-body px-0 py-0">
+                    <h4 class="fs-15">
+                      <a href="#!" class="card-link text-dark font-weight-bolder"> Judge Rules Pennsylvania's 'New Normal' COVID Restrictions Unconstitutional </a>
+                    </h4>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row pr-0 mt-3 mr-2 col-lg-4 col-md-4">
+                <div class="col-sm-12 card border-0">
+                  <div class="position-relative">
+                    <img class="card-img-top" src="./images/tiktok-sale.jpg" alt="Card image cap" />
+                  </div>
+                  <div class="card-body px-0 py-0">
+                    <h4>
+                      <a href="#!" class="card-link text-dark font-weight-bolder"> TikTok Chooses Oracle, a Rare Trump Ally in Silicon Valley, to Sell Assets</a>
+                    </h4>
+                  </div>
+                </div>
+              </div>
+
+              <ul class="list-unstyled px-0 mt-3 col-lg-4 col-md-4">
+                <li class="media border-bottom pb-3">
+                  <img src="./images/swan-dive-rochester-protests-destroyed.jpg" class="mr-3 inside_media_img" alt="Rochester" />
+                  <div class="media-body">
+                    <h5 class="mt-0 mb-1 fs-19">
+                      <a href="#" class="stretched-link text-dark font-weight-bolder"> Rochester Eatery Offered BLM Protesters Water Hours Before Being Vandalized </a>
+                    </h5>
+                  </div>
+                </li>
+                <li class="media border-bottom py-3">
+                  <img src="./images/dunkin-donuts-santa-monica-california-2015.jpg" class="mr-3 inside_media_img" alt="Starbucks" />
+                  <div class="media-body">
+                    <h5 class="mt-0 mb-1 fs-19">
+                      <a href="#" class="stretched-link text-dark font-weight-bolder"> Are Starbucks, Dunkin' Donuts Open on Labor Day? See Coffee Shop Hours</a>
+                    </h5>
+                  </div>
+                </li>
+                <li class="media border-bottom py-3">
+                  <img src="./images/cover-pandemic-money-graphic.jpg" class="mr-3 inside_media_img" alt="Pandemic" />
+                  <div class="media-body">
+                    <h5 class="mt-0 mb-1 fs-19">
+                      <a href="#" class="stretched-link text-dark font-weight-bolder"> How the Pandemic Will Change the Way We Manage Money Forever</a>
+                    </h5>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <h6 class="card-title border-top pt-3 text-danger font-weight-bolder title-link ffam">Tech & Sciense</h6>
+          <div class="row">
+            <div class="card-group px-2 col-lg-12 col-md-12">
+              <div class="row mt-3 mr-3 col-lg-4 pr-0 col-md-4">
+                <div class="col-sm-12 card border-0">
+                  <div class="position-relative">
+                    <img class="card-img-top" src="./images/arlo-pro-3-floodlight-review.jpg" alt="Card image cap" />
+                  </div>
+                  <div class="card-body px-0 py-0">
+                    <h4 class="fs-15">
+                      <a href="#!" class="card-link text-dark font-weight-bolder"> The Arlo Pro 3 Floodlight: A Bright Light in Security Systems </a>
+                    </h4>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row pr-0 mt-3 mr-2 col-lg-4 col-md-4">
+                <div class="col-sm-12 card border-0">
+                  <div class="position-relative">
+                    <img class="card-img-top" src="./images/tiktok.jpg" alt="Card image cap" />
+                  </div>
+                  <div class="card-body px-0 py-0">
+                    <h4>
+                      <a href="#!" class="card-link text-dark font-weight-bolder"> What Trump's TikTok Ban Means For Users</a>
+                    </h4>
+                  </div>
+                </div>
+              </div>
+
+              <ul class="list-unstyled px-0 mt-3 col-lg-4 col-md-4">
+                <li class="media border-bottom pb-3">
+                  <img src="./images/elon-musk.jpg" class="mr-3 inside_media_img" alt="elon-musk" />
+                  <div class="media-body">
+                    <h5 class="mt-0 mb-1 fs-19">
+                      <a href="#" class="stretched-link text-dark font-weight-bolder"> Elon Musk Teases Battery Day Will Be 'Very Insane' As Speculation Grows </a>
+                    </h5>
+                  </div>
+                </li>
+                <li class="media border-bottom py-3">
+                  <img src="./images/siberia-crater.jpg" class="mr-3 inside_media_img" alt="Giant Creater" />
+                  <div class="media-body">
+                    <h5 class="mt-0 mb-1 fs-19">
+                      <a href="#" class="stretched-link text-dark font-weight-bolder"> Another Giant Crater Appears on Siberia's Arctic Tundra</a>
+                    </h5>
+                  </div>
+                </li>
+                <li class="media border-bottom py-3">
+                  <img src="./images/solar-minimum.png" class="mr-3 inside_media_img" alt="Sun Spotless" />
+                  <div class="media-body">
+                    <h5 class="mt-0 mb-1 fs-19">
+                      <a href="#" class="stretched-link text-dark font-weight-bolder"> The Sun Has Been Spotless for 28 Days Straight Despite New Solar Cycle</a>
+                    </h5>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <h6 class="card-title border-top pt-3 text-danger font-weight-bolder title-link ffam">Culture</h6>
+          <div class="row">
+            <div class="card-group px-2 col-lg-12 col-md-12">
+              <div class="row mt-3 mr-0 col-lg-4 pr-0 col-md-4">
+                <div class="col-sm-12 card border-0">
+                  <div class="position-relative">
+                    <img class="card-img-top" src="./images/emmys-2020-watch-online.jpg" alt="Card image cap" />
+                  </div>
+                  <div class="card-body px-0 py-0">
+                    <h4 class="fs-15">
+                      <a href="#!" class="card-link text-dark font-weight-bolder"> How to Watch the 2020 Emmys Online</a>
+                    </h4>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row pr-0 mt-3 mr-2 col-lg-4 col-md-4">
+                <div class="col-sm-12 card border-0">
+                  <div class="position-relative">
+                    <img class="card-img-top" src="./images/wwe-friday-night-smackdown-sasha-banks-returns.jpg" alt="Card image cap" />
+                  </div>
+                  <div class="card-body px-0 py-0">
+                    <h4>
+                      <a href="#!" class="card-link text-dark font-weight-bolder"> WWE 'SmackDown' Results: Sasha Banks Returns to Address Bayley's Attack</a>
+                    </h4>
+                  </div>
+                </div>
+              </div>
+
+              <ul class="list-unstyled px-0 mt-3 col-lg-4 col-md-4">
+                <li class="media border-bottom pb-3">
+                  <img src="./images/cathedral-christ-savior.jpg" class="mr-3 inside_media_img" alt="Russian Troops" />
+                  <div class="media-body">
+                    <h5 class="mt-0 mb-1 fs-19">
+                      <a href="#" class="stretched-link text-dark font-weight-bolder"> Russian Troops in Trouble After Washing Shoes in Holy Water </a>
+                    </h5>
+                  </div>
+                </li>
+                <li class="media border-bottom py-3">
+                  <img src="./images/joe-rogan.jpg" class="mr-3 inside_media_img" alt="Joe Rogan" />
+                  <div class="media-body">
+                    <h5 class="mt-0 mb-1 fs-19">
+                      <a href="#" class="stretched-link text-dark font-weight-bolder"> Joe Rogan Apologizes For Accusing 'Left-Wing' of Setting Portland Fires</a>
+                    </h5>
+                  </div>
+                </li>
+                <li class="media border-bottom py-3">
+                  <img src="./images/james-charles-accused-stealing-merch-ideas.jpg" class="mr-3 inside_media_img" alt="James Charles" />
+                  <div class="media-body">
+                    <h5 class="mt-0 mb-1 fs-19">
+                      <a href="#" class="stretched-link text-dark font-weight-bolder"> James Charles Accused of Stealing Merch Ideas From Another YouTuber</a>
+                    </h5>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <h6 class="card-title border-top pt-3 text-danger font-weight-bolder title-link ffam">Sports</h6>
+          <div class="row">
+            <div class="card-group px-2 col-lg-12 col-md-12">
+              <div class="row mt-3 mr-0 col-lg-4 pr-0 col-md-4">
+                <div class="col-sm-12 card border-0">
+                  <div class="position-relative">
+                    <img class="card-img-top" src="./images/miami-hurricanes-college-football.jpg" alt="Card image cap" />
+                  </div>
+                  <div class="card-body px-0 py-0">
+                    <h4 class="fs-15">
+                      <a href="#!" class="card-link text-dark font-weight-bolder"> College Football Week 2: Miami @ Louisville Preview</a>
+                    </h4>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row pr-0 mt-3 mr-2 col-lg-4 col-md-4">
+                <div class="col-sm-12 card border-0">
+                  <div class="position-relative">
+                    <img class="card-img-top" src="./images/trevor-lawrence-clemson.jpg" alt="Card image cap" />
+                  </div>
+                  <div class="card-body px-0 py-0">
+                    <h4>
+                      <a href="#!" class="card-link text-dark font-weight-bolder"> College Football Week 3: Clemson vs. the Citadel Preview</a>
+                    </h4>
+                  </div>
+                </div>
+              </div>
+
+              <ul class="list-unstyled px-0 mt-3 col-lg-4 col-md-4">
+                <li class="media border-bottom pb-3">
+                  <img src="./images/college-football-usf.jpg" class="mr-3 inside_media_img" alt="College Footall" />
+                  <div class="media-body">
+                    <h5 class="mt-0 mb-1 fs-19">
+                      <a href="#" class="stretched-link text-dark font-weight-bolder"> College Football Week 2: South Florida at Notre Dame Preview</a>
+                    </h5>
+                  </div>
+                </li>
+                <li class="media border-bottom py-3">
+                  <img src="./images/lebron-james-nba-los-angeles-lakers.jpg" class="mr-3 inside_media_img" alt="NBA Playoffs" />
+                  <div class="media-body">
+                    <h5 class="mt-0 mb-1 fs-19">
+                      <a href="#" class="stretched-link text-dark font-weight-bolder"> NBA Playoffs: How to Watch LA Lakers vs Denver Nuggets on TV and Online</a>
+                    </h5>
+                  </div>
+                </li>
+                <li class="media border-bottom py-3">
+                  <img src="./images/justin-thomas-tiger-woods-pga-tour.jpg" class="mr-3 inside_media_img" alt="U.S. Open" />
+                  <div class="media-body">
+                    <h5 class="mt-0 mb-1 fs-19">
+                      <a href="#" class="stretched-link text-dark font-weight-bolder">U.S. Open: Friday Tee Times, Second Round Pairings at Winged Foot</a>
+                    </h5>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- section for the 2 cards and 3 on the right end here-->
+        </div>
+
+        <div class="col-lg-12">
+          <!-- subscribe section -->
+          <div class="row px-0 mt-3 sub_dark">
+            <div class="row card border-0 w-100">
+              <h6 class="card-title text-uppercase text-danger pl-3 font-weight-bolder">subscribe</h6>
+              <div class="position-relative text-center subpad subcolor ml-3">
+                <div class="both position-relative">
+                  <img class="card-img-top two_images" src="./images/cover-september-11-18-2020.jpg" alt="Card image cap" />
+                  <img class="card-img-top two_images position-absolute niddle" src="./images/cover-september-25-2020.jpg" alt="Card image cap" />
+                </div>
+                <h3 class="text-dark font-weight-bolder text-center position-absolute subline px-1">In-depth Stories You Don't See Elsewhere About Topics You Want to Read!</h3>
+              </div>
+
+              <div class="card-body px-0 py-0 text-center subcolor ml-3">
+                <p class="card-text text-center inside subpad fs-subs">All Access + Weekly Delivery Choose A Membership That's Perfect for You!.</p>
+                <button class="btn btn-danger text-uppercase" type="button">subscribe</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- subscribe section ends here -->
+
+          <!-- newsletter section starts here -->
+          <div class="card border-0 sub_dark">
+            <h6 class="card-title text-uppercase text-danger font-weight-bolder">newsletter</h6>
+            <div class="card">
+              <div class="card-body px-0 py-0">
+                <div class="card border-0">
+                  <div class="card-body mx-0 px-0 text-center">
+                    <img class="card-img-top taller" src="./images/starting5-homepage.png" alt="Card image cap" />
+                    <h3 class="fs-19 font-weight-bolder">The Starting 5</h3>
+                    <p class="fs-15">See why nearly a quarter of a million subscribers begin their day with the Starting 5.</p>
+                    <form class="row">
+                      <div class="col-6 form-group pr-0">
+                        <label for="exampleInputEmail14" class="font-weight-bolder mb-3 pl-5 fs-19"></label>
+                        <input type="email" placeholder="Email address" class="form-control" id="exampleInputEmail14" />
+                      </div>
+                      <div class="col-6 pt-3 pl-0">
+                        <button type="submit" class="btn btn-danger col-sm btn-sm text-uppercase py-2 mt-2">free sign up<i class="fas fa-chevron-right right ml-2"></i></button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- newsletter section ends here -->
+        </div>
+
+        <div class="row">
+          <div class="left_side col-lg-7 pt-4">
+            <h6 class="card-title text-uppercase text-danger sub_dark_no font-weight-bolder">subscribe</h6>
+            <div class="card mb-3 sub_subscripe subcolor mb-md-4 max-width: 100%">
+              <div class="row no-gutters py-md-5">
+                <div class="col-md-4">
+                  <img class="card-img-top two_images ml-md-5" src="./images/cover-september-11-18-2020.jpg" alt="Card image cap" />
+                  <img class="card-img-top two_images position-absolute niddle_hide ml-md-3" src="./images/cover-september-25-2020.jpg" alt="Card image cap" />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body ml-5">
+                    <h5 class="card-title sub_title ffam ml-lg-5">In-depth Stories You Don't See Elsewhere About Topics You Want to Read!</h5>
+                    <p class="card-text fs-19 ml-lg-5">All Access + Weekly Delivery.</p>
+                    <p class="card-text fs-19 ml-lg-5">Choose A Membership That's Perfect for You!.</p>
+                    <button class="btn btn-danger text-uppercase ml-lg-5" type="button">subscribe</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="right_side col-lg-5 px-lg-0 pt-4">
+            <h6 class="card-title text-uppercase text-danger sub_dark_no font-weight-bolder">newsletter</h6>
+            <div class="card mb-3 sub_subscripe subcolor max-width: 100%">
+              <div class="row no-gutters taller">
+                <div class="col-md-6">
+                  <img class="card-img-top taller" src="./images/starting5-homepage.png" alt="Card image cap" />
+                </div>
+                <div class="col-md-6 d-flex align-items-center taller">
+                  <div class="card-body">
+                    <h3 class="fs-19 font-weight-bolder">The Starting 5</h3>
+                    <p class="fs-15">See why nearly a quarter of a million subscribers begin their day with the Starting 5.</p>
+                    <form>
+                      <div class="form-group">
+                        <label for="exampleInputEmail12" class="font-weight-bolder mb-3 pl-5 fs-19"></label>
+                        <input type="email" placeholder="Email address" class="form-control" id="exampleInputEmail12" />
+                      </div>
+                      <button type="submit" class="btn btn-block btn-danger text-uppercase mt-2">free sign up<i class="fas fa-chevron-right right ml-2"></i></button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Footer starts here -->
+        <footer>
+          <div class="px-3">
+            <div class="newsweek-cont">
+              <div class="copyright d-lg-flex">
+                <a class="brand" href="https://www.newsweek.com" title="Newsweek Homepage">
+                  <svg version="1.1" class="d-block mr-3 mb-3" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 395.6 60" style="enable-background: new 0 0 395.6 60" xml:space="preserve">
+                    <g>
+                      <path
+                        class="st0"
+                        d="M58.7,10.8h-5.6v48.3H42.8l-25.1-33v22.1h5.6v10.8H0V48.3h5.6V10.8H0V0h17.6L41,30.7V10.8h-5.6V0h23.2	L58.7,10.8L58.7,10.8z M95.8,38c0,0.9,0,1.8-0.1,2.7H70.3c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11	c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6C89.9,16.3,95.8,25.6,95.8,38 M159,27.3h-3.7	l-9.4,31.8h-12.5l-5.9-17.4l-5.3,17.4h-12.8L98.8,27.4h-3.7V16.6h22.1v10.7h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.6l5-16.9h-5.6V16.6	H159L159,27.3L159,27.3z M174.5,27.8c0,1.5,1.2,2.5,5.4,3.9l6,2c5.5,1.8,12.1,5.9,12.1,13.4c0,8.8-6.6,13-14.7,13	c-6.5,0-11.5-3.2-12.9-4.6V59h-10.8V44.4h10.6c0.3,4.8,4.6,7.3,8.5,7.3c3.2,0,4.7-1.4,4.7-3c0-2-1.2-3.1-6.5-4.8l-5.3-1.8	c-5.4-1.7-11.4-5.7-11.4-12.8c0-8.7,7.7-13.1,14.3-13.1c6.8,0,10.1,1.9,11.8,3.8l0.1-3.3H197v13.3h-11.2c-0.2-3.6-3.7-5.2-7.2-5.2	C175.8,24.8,174.5,26.1,174.5,27.8 M262.8,27.3h-3.7l-9.4,31.8h-12.5l-5.9-17.4L226,59.1h-12.8l-10.6-31.7h-3.7V16.6h22.1v10.7	h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.7l5-16.9h-5.6V16.6h18.5V27.3z M302,37.9c0,0.9,0,1.8-0.1,2.7h-25.4	c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1	c0-10.5,7-21.6,21-21.6C296.1,16.2,302,25.5,302,37.9 M343.9,37.8c0,0.9,0,1.8-0.1,2.7h-25.4c-0.7,8.2,2.4,10.6,7.1,10.6	c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6	C338,16.1,343.9,25.4,343.9,37.8 M389.9,59h-12.8l-13.3-17.3l-4.3,3.2v3.4h3.8V59h-19.6V48.3h3.7V10.6h-5.6V0h17.8v33.9l8.9-6.5	h-5.6V16.6h23.9v10.8h-3.7l-9.3,7l10.7,13.9h5.6L389.9,59L389.9,59z M395.6,56.6c0,0.5-0.1,0.9-0.4,1.2c-0.2,0.4-0.5,0.7-0.9,0.9	c-0.4,0.2-0.8,0.4-1.3,0.4c-0.5,0-0.9-0.1-1.2-0.4c-0.4-0.2-0.7-0.5-0.9-0.9c-0.2-0.4-0.4-0.8-0.4-1.2c0-0.5,0.1-0.9,0.4-1.2	c0.2-0.4,0.5-0.7,0.9-0.9c0.4-0.2,0.8-0.4,1.2-0.4c0.5,0,0.9,0.1,1.3,0.4c0.4,0.2,0.7,0.5,0.9,0.9	C395.5,55.8,395.6,56.2,395.6,56.6 M394.6,58c0.4-0.4,0.6-0.9,0.6-1.4c0-0.6-0.2-1-0.6-1.4s-0.9-0.6-1.4-0.6s-1,0.2-1.4,0.6	c-0.4,0.4-0.6,0.9-0.6,1.4c0,0.6,0.2,1,0.6,1.4c0.4,0.4,0.9,0.6,1.4,0.6S394.2,58.4,394.6,58 M393.6,56.8c0.1,0.1,0.2,0.1,0.2,0.1	c0.1,0.1,0.2,0.2,0.2,0.3c0,0,0.2,0.3,0.4,0.8h-0.8c-0.3-0.5-0.4-0.8-0.5-0.9c-0.1-0.1-0.2-0.2-0.3-0.2c0,0-0.1,0-0.1,0v1.1h-0.6	v-2.6h1.2c0.4,0,0.6,0.1,0.7,0.2c0.2,0.2,0.2,0.3,0.2,0.6c0,0.2-0.1,0.4-0.2,0.5C393.9,56.6,393.8,56.7,393.6,56.8 M393.5,56.3	c0.1-0.1,0.1-0.2,0.1-0.3s-0.1-0.2-0.1-0.3c-0.1-0.1-0.2-0.1-0.4-0.1h-0.3v0.7h0.3C393.3,56.4,393.4,56.4,393.5,56.3 M318.4,33.5	h13.9c0-6-3.9-8.4-6.8-8.4C322.1,25.2,318.6,27.9,318.4,33.5 M276.5,33.6h13.9c0-6-3.9-8.4-6.8-8.4C280.3,25.2,276.8,28,276.5,33.6 M70.3,33.7h13.9c0-6-3.9-8.4-6.8-8.4C74.1,25.3,70.6,28.1,70.3,33.7"
+                      ></path>
+                    </g>
+                  </svg>
+                </a>
+                <span class="main_gray w-25 d-flex align-items-center">© 2020 NEWSWEEK</span>
+                <div class="socialmedia mt-2 d-lg-flex w-100 justify-content-end">
+                  <i class="main_gray fab fa-facebook-square mr-3"></i>
+                  <i class="main_gray fab fa-twitter mt-1 mr-3"></i>
+                  <i class="main_gray fab fa-instagram mt-1 mr-3"></i>
+                  <i class="main_gray fab fa-tumblr mt-1 mr-3"></i>
+                  <i class="main_gray fab fa-linkedin-in mr-3"></i>
+                </div>
+              </div>
+            </div>
+            <div class="footer-links main_gray mb-4">
+              <div class="mt-2 d-flex">
+                <label class="editions mt-1 mr-3">
+                  <strong>Editions:</strong>
+                </label>
+                <ul class="mb-0 px-0 py-0">
+                  <li class="border-lg d-inline-block my-1 mr-2 mb-0 pr-2"><a href="#" class="main_gray">日本</a></li>
+                  <li class="border-lg d-inline-block my-1 mr-2 mb-0 pr-2"><a href="#" class="main_gray">Pakistan</a></li>
+                  <li class="border-lg d-inline-block my-1 mr-2 mb-0 pr-2"><a href="#" class="main_gray">Polska</a></li>
+                  <li class="border-lg d-inline-block my-1 mr-2 mb-0 pr-2"><a href="#" class="main_gray">România</a></li>
+                </ul>
+              </div>
+              <ul class="pl-0">
+                <li class="border-lg d-inline-block my-1 mr-2 mb-0 pr-2"><a href="#" class="main_gray">About Us</a></li>
+                <li class="border-lg d-inline-block my-1 mr-2 mb-0 pr-2"><a href="#" class="main_gray">Corrections</a></li>
+                <li class="border-lg d-inline-block my-1 mr-2 mb-0 pr-2"><a href="#" class="main_gray">Contact Us</a></li>
+                <li class="border-lg d-inline-block my-1 mr-2 mb-0 pr-2"><a href="#" class="main_gray">Editorial Guidelines</a></li>
+                <li class="border-lg d-inline-block my-1 mr-2 mb-0 pr-2"><a href="#" class="main_gray">Advertise</a></li>
+                <li class="border-lg d-inline-block my-1 mr-2 mb-0 pr-2"><a href="#" class="main_gray">Copyright</a></li>
+                <li class="border-lg d-inline-block my-1 mr-2 mb-0 pr-2"><a href="#" class="main_gray">Terms & Conditions</a></li>
+                <li class="border-lg d-inline-block my-1 mr-2 mb-0 pr-2"><a href="#" class="main_gray">Privacy Policy</a></li>
+                <li class="border-lg d-inline-block my-1 mr-2 mb-0 pr-2"><a href="#" class="main_gray">Cookie Policy </a></li>
+                <li class="border-lg d-inline-block my-1 mr-2 mb-0 pr-2"><a href="#" class="main_gray">Terms of Sale</a></li>
+                <li class="border-lg d-inline-block my-1 mr-2 mb-0 pr-2"><a href="#" class="main_gray">Archive</a></li>
+                <li class="border-lg d-inline-block my-1 mr-2 mb-0 pr-2"><a href="#" class="main_gray">Announcements</a></li>
+                <li class="border-lg d-inline-block my-1 mr-2 mb-0 pr-2"><a href="#" class="main_gray">Consent preferences</a></li>
+                <li class="border-lg d-inline-block my-1 mr-2 mb-0 pr-2"><a href="#" class="main_gray">U.S. Edition</a></li>
+              </ul>
+            </div>
+          </div>
+        </footer>
+        <!-- footer ends Here -->
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="inderx.js"></script>
+  </body>
+</html>
