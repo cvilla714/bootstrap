@@ -4,7 +4,7 @@
 
 Building a Clone of the Newsweek using Bootstrap Framework
 
-![screenshot](./app_screenshot.png/)
+![screenshot](./app_screenshot.png)
 
 #HTML, CSS and Bootstrap
 
@@ -21,11 +21,11 @@ framework the objective was to clone the website Newsweek.
 
 [Live Demo Link](https://cvilla714.github.io/bootstrap)
 
-👤 **Devkc**
+👤 **Cosmel Villalobos**
 
-- Github: [@githubhandle](https://github.com/cvilla714)
-- Twitter: [@twitterhandle](https://twitter.com/kckeyti)
-- Linkedin: [linkedin](https://www.linkedin.com/in/cosmel-villalobos-1900531aa/)
+- Github: [@cvilla714](https://github.com/cvilla714)
+- Twitter: [@kckeyti](https://twitter.com/kckeyti)
+- LinkedIn: [Cosmel Villalobos](https://www.linkedin.com/in/cosvilla/)
 
 👤 **Huemac Alfredo**
 
